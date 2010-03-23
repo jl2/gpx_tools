@@ -23,5 +23,6 @@ int main(int argc, char **argv)
   QApplication app(argc, argv);
   GpxGui gpxg;
   gpxg.showMaximized();
+  // Testing git.
   return app.exec();
 }
