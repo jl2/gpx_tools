@@ -65,7 +65,7 @@ for (my $i = 0; $i < $#points; $i++)
 		push( @speed_vals, $temp_speed );
 		$dist += $temp_distance;
 
-		# count number of runs
+		# count runs somehow.  This won't work, but there is definetly an up/down pattern the ski runs
 		if( $i > 0 )
 		{
 			if( $going_down == 0 && $points[$i]->{ele}->[0] < $points[$i-1]->{ele}->[0] )
