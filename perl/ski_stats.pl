@@ -14,6 +14,11 @@ my $meters_per_mile = 1609.344;
 my $feet_per_meter = 3.2808399;
 my $pi = 3.14159265;
 
+if ($#ARGV < 0) {
+    print "No file name given.\n";
+    exit 1;
+}
+
 # Some ideas for stats I like to have
 # =========================================
 
@@ -25,7 +30,7 @@ my $pi = 3.14159265;
 
 # Parse out the GPX file
 my $xml = new XML::Simple;
-my $data = $xml->XMLin("jl2.gpx", ForceArray=>1);
+my $data = $xml->XMLin($ARGV[0], ForceArray=>1);
 
 my @trks = @{$data->{trk}};
 my @segs;
