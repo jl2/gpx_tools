@@ -20,15 +20,17 @@ use XML::Simple;
 use Date::Manip;
 use IO::Handle;
 use Data::Dumper;
+use Math::Trig qw(great_circle_distance deg2rad);
 
 # redirecting STDOUT to hide errors from Data::Manip on Linux (it's a hack, I know)
 #open ERROR, '>', "/dev/null";
 #STDERR->fdopen( \*ERROR, 'w');
 
 # constants
-my $meters_per_mile = 1609.344;
+my $miles_per_km = 0.621371192;
 my $feet_per_meter = 3.2808399;
 my $pi = 3.14159265;
+my $earth_radius = 6378; # in km
 
 if ($#ARGV < 0) {
     print "No file name given.\n";
@@ -63,7 +65,7 @@ foreach my $trk (@trks)
 
 my ($max_elevation, $min_elevation, $dist, $temp_distance, $temp_speed, $num_runs) = 0;
 my @speed_vals;
-my $going_down = 0;
+my @L, @T;
 
 $min_elevation = $points[0]->{ele}->[0];
 for (my $i = 0; $i < $#points; $i++)
@@ -75,30 +77,16 @@ for (my $i = 0; $i < $#points; $i++)
 
 	if( $i+1 <= $#points )
 	{
-		# calculate the distance
-		$temp_distance = &great_circle_distance(&degrees_to_radians($points[$i]->{lat}),
-							&degrees_to_radians($points[$i]->{lon}),
-							&degrees_to_radians($points[$i+1]->{lat}),
-							&degrees_to_radians($points[$i+1]->{lon}));
+		@L = NESW( $points[$i]->{lon}, $points[$i]->{lat} );
+		@T = NESW( $points[$i+1]->{lon}, $points[$i+1]->{lat} );
+
+		$temp_distance = great_circle_distance(@L, @T, $earth_radius );
 
 		# calculate the speed
 		$temp_speed = &speed( $points[$i]->{'time'}->[0], $points[$i+1]->{'time'}->[0], $temp_distance );
 		push( @speed_vals, $temp_speed );
 		$dist += $temp_distance;
 
-		# count runs somehow.  This won't work, but there is definetly an up/down pattern the ski runs
-		if( $i > 0 )
-		{
-			if( $going_down == 0 && $points[$i]->{ele}->[0] < $points[$i-1]->{ele}->[0] )
-			{		
-				$num_runs++;
-				$going_down = 1;
-			}
-			elsif( $going_down == 1 && $points[$i]->{ele}->[0] > $points[$i+1]->{ele}->[0] )
-			{
-				$going_down = 0;
-			}
-		}
 	}
 
 	if( $max_elevation < $points[$i]->{ele}->[0] )
@@ -127,8 +115,7 @@ foreach my $speed ( @speed_vals )
 $average_speed = $average_speed / $#speed_vals;
 
 # Print out skiing data
-printf( "Total distance travelled: %.1f miles\n", $dist / $meters_per_mile);
-printf( "Number of runs: %d\n", $num_runs );
+printf( "Total distance travelled: %.1f miles\n", $dist * $miles_per_km);
 #printf( "Vertical feet skied: %.1f feet\n", $vert );
 printf( "Max speed: %.2f mph\n", $max_speed );
 printf( "Average speed: %.2f mph\n", $average_speed );
@@ -156,32 +143,12 @@ sub speed
 	my $speed = 0;
 	if( $delta > 0 )
 	{
-		$speed = ($distance/$meters_per_mile)/$delta;
+		$speed = ($distance * $miles_per_km)/$delta;
 	}
 	return $speed;
 }
 
-# Got this calculation from here - http://www.indo.com/distance/dist.pl
-# will probably update this to take elevation into account or use a more
-# accurate function
-sub great_circle_distance 
-{
-    my ($lat1,$long1,$lat2,$long2) = @_;
-
-    # approx radius of Earth in meters.  True radius varies from
-    # 6357km (polar) to 6378km (equatorial).
-    my $earth_radius = 6371010;
-
-    my $dlon = $long2 - $long1;
-    my $dlat = $lat2 - $lat1;
-    my $a = (sin($dlat / 2)) ** 2 
-	    + cos($lat1) * cos($lat2) * (sin($dlon / 2)) ** 2;
-    my $d = 2 * atan2(sqrt($a), sqrt(1 - $a));
-
-    return $earth_radius * $d;
-}
-
-sub degrees_to_radians 
-{
-    return $_[0] * $pi / 180.0;
+sub NESW 
+{ 
+	return deg2rad($_[0]), deg2rad(90 - $_[1]); 
 }
