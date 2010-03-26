@@ -2,7 +2,7 @@
 
 # ski_stats.pl
 
-# Copyright (c) 2010, Robert Tadlock rtadlock@gmail.com
+# Copyright (c) 2010, Robert Tadlock rtadlock@gmail.com and Jeremiah LaRocco jeremiah.larocco@gmail.com
 
 # Permission to use, copy, modify, and/or distribute this software for any
 # purpose with or without fee is hereby granted, provided that the above
@@ -26,89 +26,88 @@ use Math::Trig qw(great_circle_distance deg2rad);
 #open ERROR, '>', "/dev/null";
 #STDERR->fdopen( \*ERROR, 'w');
 
-# constants
+# Constants
+# =========================================
 my $miles_per_km = 0.621371192;
 my $feet_per_meter = 3.2808399;
 my $pi = 3.14159265;
 my $earth_radius = 6378; # in km
 
-if ($#ARGV < 0) {
-    print "No file name given.\n";
-    exit 1;
-}
 
 # Some ideas for stats I like to have
 # =========================================
 
 # Vertical feet skied
-# total distance skied
+# total distance skied vs. travelled
 # time skiing
 # time on lift
 # number of runs
+
+if ($#ARGV < 0) 
+{
+    print "No file name given.\n";
+    exit 1;
+}
 
 # Parse out the GPX file
 my $xml = new XML::Simple;
 my $data = $xml->XMLin($ARGV[0], ForceArray=>1);
 
 my @trks = @{$data->{trk}};
-my @segs;
-my @points;
+my ($max_elevation, $min_elevation, $dist, $temp_distance, $temp_speed, $num_runs, $max_speed, $average_speed) = 0;
+my @speed_vals, @points, @start, @finish, @segs;
 
 foreach my $trk (@trks)
 {
-	@segs = @{$trk->{trkseg}};
-	foreach my $seg (@segs)
-	{
-		push( @points, @{$seg->{trkpt}} );	
-	}	
+	push( @segs,@{$trk->{trkseg}});
 }
 
-my ($max_elevation, $min_elevation, $dist, $temp_distance, $temp_speed, $num_runs) = 0;
-my @speed_vals;
-my @L, @T;
-
-$min_elevation = $points[0]->{ele}->[0];
-for (my $i = 0; $i < $#points; $i++)
+foreach my $seg (@segs)
 {
-	if( $points[$i]->{'time'}->[0] =~ m/1972/ )
+	push( @points, @{$seg->{trkpt}} );	
+
+	$min_elevation = $points[0]->{ele}->[0];
+	for (my $i = 0; $i < $#points; $i++)
 	{
-		next;
+		if( $i+1 <= $#points )
+		{
+			@start = earth_point( $points[$i]->{lon}, $points[$i]->{lat} );
+			@finish = earth_point( $points[$i+1]->{lon}, $points[$i+1]->{lat} );
+
+			$temp_distance = great_circle_distance(@start, @finish, $earth_radius );
+
+			# Calculate the speed between points
+			$temp_speed = &speed( $points[$i]->{'time'}->[0], $points[$i+1]->{'time'}->[0], $temp_distance );
+			push( @speed_vals, $temp_speed );
+			$dist += $temp_distance;
+
+		}
+
+		if( $max_elevation < $points[$i]->{ele}->[0] )
+		{
+			$max_elevation = $points[$i]->{ele}->[0];
+		}
+
+		if( $min_elevation > $points[$i]->{ele}->[0] )
+		{
+			$min_elevation = $points[$i]->{ele}->[0];
+		}
 	}
-
-	if( $i+1 <= $#points )
-	{
-		@L = NESW( $points[$i]->{lon}, $points[$i]->{lat} );
-		@T = NESW( $points[$i+1]->{lon}, $points[$i+1]->{lat} );
-
-		$temp_distance = great_circle_distance(@L, @T, $earth_radius );
-
-		# calculate the speed
-		$temp_speed = &speed( $points[$i]->{'time'}->[0], $points[$i+1]->{'time'}->[0], $temp_distance );
-		push( @speed_vals, $temp_speed );
-		$dist += $temp_distance;
-
-	}
-
-	if( $max_elevation < $points[$i]->{ele}->[0] )
-	{
-		$max_elevation = $points[$i]->{ele}->[0];
-	}
-
-	if( $min_elevation > $points[$i]->{ele}->[0] )
-	{
-		$min_elevation = $points[$i]->{ele}->[0];
-	}
+	@points = ();
 }
 
 # Find the max speed & average speed
-my ($max_speed, $average_speed) = 0;
-
 foreach my $speed ( @speed_vals )
 {
-	$average_speed += $speed;
-	if( $max_speed < $speed )
+	# Drop speeds >100 mph because they are probably wrong
+	# world record ski speed is ~150 mph anyway 
+	if( $speed <= 100 )
 	{
-		$max_speed = $speed;
+		$average_speed += $speed;
+		if( $max_speed < $speed )
+		{
+			$max_speed = $speed;
+		}
 	}
 }
 
@@ -120,7 +119,6 @@ printf( "Max speed: %.2f mph\n", $max_speed );
 printf( "Average speed: %.2f mph\n", $average_speed );
 printf( "Max elevation: %.1f feet\n", $max_elevation * $feet_per_meter );
 printf( "Min elevation: %.1f feet\n", $min_elevation * $feet_per_meter );
-
 
 
 # Calc/misc functions
@@ -139,18 +137,17 @@ sub speed
 	my $endDate = ParseDate( $finish_time );
 	my $delta = DateCalc( $startDate, $endDate );
 
-	# I'm not sure this thing is always working right.
-	# will look into it soon
 	$delta = Delta_Format( $delta, "exact", "%hd" );
 	my $speed = 0;
 	if( $delta > 0 )
 	{
 		$speed = ($distance * $miles_per_km)/$delta;
 	}
+
 	return $speed;
 }
 
-sub NESW 
+sub earth_point 
 { 
 	return deg2rad($_[0]), deg2rad(90 - $_[1]); 
 }
