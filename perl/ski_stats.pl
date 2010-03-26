@@ -116,7 +116,6 @@ $average_speed = $average_speed / $#speed_vals;
 
 # Print out skiing data
 printf( "Total distance travelled: %.1f miles\n", $dist * $miles_per_km);
-#printf( "Vertical feet skied: %.1f feet\n", $vert );
 printf( "Max speed: %.2f mph\n", $max_speed );
 printf( "Average speed: %.2f mph\n", $average_speed );
 printf( "Max elevation: %.1f feet\n", $max_elevation * $feet_per_meter );
@@ -139,6 +138,9 @@ sub speed
 	my $startDate = ParseDate( $start_time );
 	my $endDate = ParseDate( $finish_time );
 	my $delta = DateCalc( $startDate, $endDate );
+
+	# I'm not sure this thing is always working right.
+	# will look into it soon
 	$delta = Delta_Format( $delta, "exact", "%hd" );
 	my $speed = 0;
 	if( $delta > 0 )
