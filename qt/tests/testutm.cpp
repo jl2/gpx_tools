@@ -71,6 +71,10 @@ public:
         return dist/dt;
     }
 
+    time_t secondsBetween(const GpxPoint &p2) {
+        return p2._time.toTime_t() - _time.toTime_t();
+    }
+
     double latitude() {
         return _lat;
     }
@@ -114,15 +118,27 @@ private:
     QDateTime _time;
 };
 
-class HasLength {
+class Track {
 public:
+
     virtual double length()=0;
+
+    virtual time_t duration()=0;
+
+    virtual double maxSpeed() = 0;
+
+    virtual double averageSpeed() {
+        if (duration()>0) {
+            return length()/duration();
+        }
+        return 0.0;
+    }
 protected:
-    HasLength() { }
-    HasLength& operator =(const HasLength&) { return *this;}
+    Track() { }
+    Track& operator =(const Track&) { return *this;}
 };
 
-class GpxTrackSegment : public GpxElement, public HasLength {
+class GpxTrackSegment : public GpxElement, public Track {
 public:
     GpxTrackSegment() : _name(""), _number(0) { }
 
@@ -149,6 +165,11 @@ public:
         return dist;
     }
 
+    time_t duration() {
+        if (track_pts.size()<2) return 0;
+        return track_pts[0].secondsBetween(track_pts[track_pts.size()-1]);
+    }
+
     double maxSpeed() {
         double curMax = 0.0;
         for (int i=0; i< track_pts.size()-1; ++i) {
@@ -160,16 +181,6 @@ public:
             }
         }
         return curMax;
-    }
-
-    double averageSpeed() {
-        if (track_pts.size()==0) return 0.0;
-        
-        double speedSum = 0.0;
-        for (int i=0; i< track_pts.size()-1; ++i) {
-            speedSum += track_pts[i].speedBetween(track_pts[i+1]);
-        }
-        return speedSum / track_pts.size();
     }
 
     GpxPoint& operator [](int n) {
@@ -213,7 +224,7 @@ private:
     QList<GpxPoint> track_pts;
 };
 
-class GpxFile : public GpxElement, public HasLength {
+class GpxFile : public GpxElement, public Track {
 public:
     GpxFile(QString fname) : _time(QDateTime()) {
         readFile(fname);
@@ -297,6 +308,23 @@ public:
             cnt += track_segments[i].pointCount();
         }
         return cnt;
+    }
+
+    time_t duration() {
+        time_t dur=0;
+        for (int i=0; i<track_segments.size(); ++i) {
+            dur += track_segments[i].duration();
+        }
+        return dur;
+    }
+
+    void purgeEmpty() {
+        for (int i=0; i<track_segments.size(); ++i) {
+            if (track_segments[i].pointCount()==0) {
+                track_segments.removeAt(i);
+                --i;
+            }
+        }
     }
 
 private:
@@ -400,6 +428,7 @@ private:
         reader.setFeature("http://trolltech.com/xml/features/report-whitespace-only-CharData", false);
         reader.setContentHandler( &handler );
         reader.parse( source );
+        purgeEmpty();
         return true;
     }
 
@@ -412,6 +441,18 @@ double meterPerSecond2MilePerHour(double speed) {
     return speed * 2.23693629;
 }
 
+QString formatSeconds(time_t dur) {
+    int secs = dur % 60;
+    int mins = (dur/60)%60;
+    int hrs = dur/(60*60);
+    QChar z('0');
+    if (hrs>0) {
+        return QString("%1:%2:%3").arg(hrs,2,10,z).arg(mins,2,10,z).arg(secs,2,10,z);
+    } else if (mins>0) {
+        return QString("%1:%2").arg(mins,2,10,z).arg(secs,2,10,z);
+    }
+    return QString("%1").arg(secs,2L,10,z);
+}
 int main(int argc ,char *argv[]) {
 
     if (argc != 3) {
@@ -421,14 +462,18 @@ int main(int argc ,char *argv[]) {
     GpxFile gpx(argv[1]);
 
     qDebug() << "Total distance: " << meter2mile(gpx.length()) << " miles";
-    qDebug() << "Number of segments: " << gpx.segmentCount();
-    qDebug() << "GPX File max speed: " << meterPerSecond2MilePerHour(gpx.maxSpeed()) << " mph";
+    qDebug() << "Total duration: " << formatSeconds(gpx.duration());
+    qDebug() << "Max speed: " << meterPerSecond2MilePerHour(gpx.maxSpeed()) << " mph";
+    qDebug() << "Average speed: " << meterPerSecond2MilePerHour(gpx.averageSpeed()) << " mph";
+
+    qDebug() << "\nNumber of segments: " << gpx.segmentCount();
 
     for (int i=0; i<gpx.segmentCount(); ++i) {
         qDebug() << "Segment " << (i+1) << " has " <<
             gpx[i].pointCount() << " points, "
-            "length " << meter2mile(gpx[i].length()) <<
-            " miles, max speed of " << meterPerSecond2MilePerHour(gpx[i].maxSpeed()) << " mph, "
+            "length " << meter2mile(gpx[i].length()) << " miles, "
+            "duration " << formatSeconds(gpx[i].duration()) <<
+            "max speed of " << meterPerSecond2MilePerHour(gpx[i].maxSpeed()) << " mph, "
             "and average speed of " << meterPerSecond2MilePerHour(gpx[i].averageSpeed()) << " mph";
     }
 
