@@ -56,6 +56,7 @@ my $data = $xml->XMLin($ARGV[0], ForceArray=>1);
 my @trks = @{$data->{trk}};
 my ($max_elevation, $min_elevation, $dist, $temp_distance, $temp_speed, $num_runs, $max_speed, $average_speed) = 0;
 my @speed_vals, @points, @start, @finish, @segs;
+my $going_up = 1;
 
 foreach my $trk (@trks)
 {
@@ -74,13 +75,12 @@ foreach my $seg (@segs)
 			@start = earth_point( $points[$i]->{lon}, $points[$i]->{lat} );
 			@finish = earth_point( $points[$i+1]->{lon}, $points[$i+1]->{lat} );
 
-			$temp_distance = great_circle_distance(@start, @finish, $earth_radius );
+			$temp_distance = great_circle_distance( @start, @finish, $earth_radius );
 
 			# Calculate the speed between points
 			$temp_speed = &speed( $points[$i]->{'time'}->[0], $points[$i+1]->{'time'}->[0], $temp_distance );
 			push( @speed_vals, $temp_speed );
 			$dist += $temp_distance;
-
 		}
 
 		if( $max_elevation < $points[$i]->{ele}->[0] )
