@@ -29,6 +29,8 @@ class QListWidgetItem;
 class QStackedWidget;
 class QFrame;
 
+class GpxFile;
+
 class GpxGui : public QMainWindow {
   Q_OBJECT;
 
@@ -86,6 +88,9 @@ class GpxGui : public QMainWindow {
   QAction *exitAction;
   QAction *aboutAction;
   QAction *configAction;
+
+
+    GpxFile *gpx;
 };
 
 #endif

@@ -18,9 +18,11 @@
 #include <stdexcept>
 #include "gpxgui.h"
 
+#include "gpxfile.h"
+
 void GpxGui::readSettings() {
 }
-GpxGui::GpxGui(QWidget *parent) : QMainWindow(parent) {
+GpxGui::GpxGui(QWidget *parent) : QMainWindow(parent), gpx(0) {
   readSettings();
   setupActions();
   setupToolBar();
@@ -35,6 +37,7 @@ GpxGui::GpxGui(QWidget *parent) : QMainWindow(parent) {
 }
 
 GpxGui::~GpxGui() {
+    if (gpx) delete gpx;
 }
 
 void GpxGui::fillInAction(QAction **action, QString text,
@@ -144,13 +147,15 @@ void GpxGui::openFile() {
     return;
   }
 
-  // try {
-  // } catch (std::runtime_error re) {
-  //   openFileError(re.what());
-  //   return;
-  // }
-  
-  // setWindowTitle(tr("%1 - %2").arg(titleBarPrefix).arg(newFileName));
+  if (gpx) delete gpx;
+
+  gpx = new GpxFile(newFileName);
+  curFileName = newFileName;
+
+  curFileNameLbl->setText(curFileName);
+  curDistanceLbl->setText(tr("%1 meters").arg(gpx->length()));
+
+  setWindowTitle(tr("%1 - %2").arg(titleBarPrefix).arg(newFileName));
   enableActionsOnOpen();
 }
 
@@ -174,7 +179,13 @@ void GpxGui::closeFile() {
   }
   disableActionsOnClose();
   setWindowTitle(titleBarPrefix);
+
   curFileName = tr("");
+  curFileNameLbl->setText(curFileName);
+  curDistanceLbl->setText(tr("0 meters"));
+
+  if (gpx) delete gpx;
+  gpx = 0;
 }
 
 void GpxGui::about() {

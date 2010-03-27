@@ -44,13 +44,9 @@ QString formatDuration(time_t dur) {
     return QString("%1").arg(secs,2L,10,z);
 }
 
-int main(int argc ,char *argv[]) {
+int main() {
 
-    if (argc != 3) {
-        qDebug() << "No input or output file name given!";
-        return 1;
-    }
-    GpxFile gpx(argv[1]);
+    GpxFile gpx("data/quandry.gpx");
 
     qDebug() << "Total distance: " << meter2mile(gpx.length()) << " miles";
     qDebug() << "Total duration: " << formatDuration(gpx.duration());
@@ -67,17 +63,6 @@ int main(int argc ,char *argv[]) {
             "max speed of " << meterPerSecond2MilePerHour(gpx[i].maxSpeed()) << " mph, "
             "and average speed of " << meterPerSecond2MilePerHour(gpx[i].averageSpeed()) << " mph";
     }
-
-    QString theData;
-    gpx.toXml(theData);
-    
-    QFile outFile(argv[2]);
-    if (!outFile.open(QIODevice::WriteOnly | QIODevice::Text)) {
-        qDebug() << "Could not open " << argv[2] << " for writing!";
-    }
-
-    QTextStream out(&outFile);
-    out << theData;
 
     return 0;
 }
