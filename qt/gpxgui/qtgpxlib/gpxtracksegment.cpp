@@ -105,25 +105,13 @@ void GpxTrackSegment::boundLatLon(double &minLat, double &minLon, double &minEle
     
     for (int i=1; i< track_pts.size(); ++i) {
 
-        if (track_pts[i].latitude() < minLat) {
-            minLat = track_pts[i].latitude();
-        }
-        if (track_pts[i].longitude() < minLon) {
-            minLon = track_pts[i].longitude();
-        }
-        if (track_pts[i].elevation() < minEle) {
-            minEle = track_pts[i].elevation();
-        }
+        if (track_pts[i].latitude() < minLat) minLat = track_pts[i].latitude();
+        if (track_pts[i].longitude() < minLon) minLon = track_pts[i].longitude();
+        if (track_pts[i].elevation() < minEle) minEle = track_pts[i].elevation();
 
-        if (track_pts[i].latitude() > maxLat) {
-            maxLat = track_pts[i].latitude();
-        }
-        if (track_pts[i].longitude() > maxLon) {
-            maxLon = track_pts[i].longitude();
-        }
-        if (track_pts[i].elevation() > maxEle) {
-            maxEle = track_pts[i].elevation();
-        }
+        if (track_pts[i].latitude() > maxLat) maxLat = track_pts[i].latitude();
+        if (track_pts[i].longitude() > maxLon) maxLon = track_pts[i].longitude();
+        if (track_pts[i].elevation() > maxEle) maxEle = track_pts[i].elevation();
     }
 }
 
