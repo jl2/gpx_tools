@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx
+   version="1.0"
+   creator="GPSBabel - http://www.gpsbabel.org"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns="http://www.topografix.com/GPX/1/0"
+   xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+  <time>2009-11-29T03:20:21Z</time>
+  <bounds minlat="39.384716721" minlon="-106.106580645" maxlat="39.397434834" maxlon="-106.061291294"/>
+  <trk>
+    <name>ACTIVE LOG</name>
+    <trkseg>
+    </trkseg>
+  </trk>
+  <trk>
+    <name>ACTIVE LOG #2</name>
+    <number>1</number>
+    <trkseg>
+      <trkpt lat="39.38" lon="-106.00">
+        <ele>50</ele>
+        <time>2009-11-27T16:36:48Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <name>ACTIVE LOG #2</name>
+    <number>1</number>
+    <trkseg>
+      <trkpt lat="39.39" lon="-106.01">
+        <ele>55</ele>
+        <time>2009-11-27T16:36:58Z</time>
+      </trkpt>
+      <trkpt lat="39.37" lon="-105.99">
+        <ele>60</ele>
+        <time>2009-11-27T16:37:08Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

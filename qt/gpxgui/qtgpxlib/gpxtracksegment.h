@@ -50,6 +50,12 @@ public:
 
     void toXml(QString &xmlStr);
 
+    void boundLatLon(double &minLat, double &minLon, double &minEle,
+                     double &maxLat, double &maxLon, double &maxEle);
+
+    void boundUTM(double &minX, double &minY, double &minEle,
+                  double &maxX, double &maxY, double &maxEle);
+
 private:
     QString _name;
 

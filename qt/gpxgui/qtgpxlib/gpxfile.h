@@ -55,6 +55,12 @@ public:
     time_t duration();
     void purgeEmptyTracks();
 
+    void boundLatLon(double &minLat, double &minLon, double &minEle,
+                     double &maxLat, double &maxLon, double &maxEle);
+
+    void boundUTM(double &minX, double &minY, double &minEle,
+                  double &maxX, double &maxY, double &maxEle);
+
 private:
     QList<GpxTrackSegment> track_segments;
     QDateTime _time;

@@ -92,3 +92,57 @@ void GpxTrackSegment::setNumber(int number) {
 int GpxTrackSegment::pointCount() {
     return track_pts.size();
 }
+
+void GpxTrackSegment::boundLatLon(double &minLat, double &minLon, double &minEle,
+                                  double &maxLat, double &maxLon, double &maxEle) {
+    assert(track_pts.size()>0);
+
+    minLat = maxLat = track_pts[0].latitude();
+    minLon = maxLon = track_pts[0].longitude();
+    minEle = maxEle = track_pts[0].elevation();
+    
+    if (track_pts.size()==1) return;
+    
+    for (int i=1; i< track_pts.size(); ++i) {
+
+        if (track_pts[i].latitude() < minLat) {
+            minLat = track_pts[i].latitude();
+        }
+        if (track_pts[i].longitude() < minLon) {
+            minLon = track_pts[i].longitude();
+        }
+        if (track_pts[i].elevation() < minEle) {
+            minEle = track_pts[i].elevation();
+        }
+
+        if (track_pts[i].latitude() > maxLat) {
+            maxLat = track_pts[i].latitude();
+        }
+        if (track_pts[i].longitude() > maxLon) {
+            maxLon = track_pts[i].longitude();
+        }
+        if (track_pts[i].elevation() > maxEle) {
+            maxEle = track_pts[i].elevation();
+        }
+    }
+}
+
+void GpxTrackSegment::boundUTM(double &minX, double &minY, double &minEle,
+                               double &maxX, double &maxY, double &maxEle) {
+    assert(track_pts.size()>0);
+
+    minX = maxX = track_pts[0].x();
+    minY = maxY = track_pts[0].y();
+    minEle = maxEle = track_pts[0].elevation();
+    
+    for (int i=1; i< track_pts.size(); ++i) {
+
+        if (track_pts[i].x() < minX) minX = track_pts[i].x();
+        if (track_pts[i].y() < minY) minY = track_pts[i].y();
+        if (track_pts[i].elevation() < minEle) minEle = track_pts[i].elevation();
+
+        if (track_pts[i].x() > maxX) maxX = track_pts[i].x();
+        if (track_pts[i].y() > maxY) maxY = track_pts[i].y();
+        if (track_pts[i].elevation() > maxEle) maxEle = track_pts[i].elevation();
+    }
+}

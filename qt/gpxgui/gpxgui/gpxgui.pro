@@ -16,3 +16,5 @@ SOURCES += main.cpp \
            gpxgui.cpp
 
 RESOURCES += gpxgui.qrc
+
+unix:QMAKE_POST_LINK=strip $$TARGET

@@ -30,6 +30,11 @@ public:
         }
         return 0.0;
     }
+    virtual void boundLatLon(double &minLat, double &minLon, double &minEle,
+                     double &maxLat, double &maxLon, double &maxEle) = 0;
+
+    virtual void boundUTM(double &minX, double &minY, double &minEle,
+                  double &maxX, double &maxY, double &maxEle) = 0;
 
 protected:
     Track() { }

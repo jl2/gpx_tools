@@ -44,6 +44,22 @@ QString formatDuration(time_t dur) {
     return QString("%1").arg(secs,2L,10,z);
 }
 
+void testBounds() {
+    GpxFile gpx2("data/test1.gpx");
+    double minLat, minLon, minEle, maxLat, maxLon, maxEle;
+    gpx2.boundLatLon(minLat, minLon, minEle,
+                     maxLat, maxLon, maxEle);
+
+    assert(gpx2.segmentCount() == 2);
+
+    assert(minLat == 39.37);
+    assert(minLon == -106.01);
+    assert(minEle == 50);
+    assert(maxLat == 39.39);
+    assert(maxLon == -105.99);
+    assert(maxEle == 60);
+}
+
 int main() {
 
     GpxFile gpx("data/quandry.gpx");
@@ -64,5 +80,8 @@ int main() {
             "and average speed of " << meterPerSecond2MilePerHour(gpx[i].averageSpeed()) << " mph";
     }
 
+    testBounds();
+
+    qDebug() << "All tests passed.";
     return 0;
 }

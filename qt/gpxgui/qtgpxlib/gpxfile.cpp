@@ -136,3 +136,49 @@ bool GpxFile::readFile(QString fname) {
     return true;
 }
 
+void GpxFile::boundLatLon(double &minLat, double &minLon, double &minEle,
+                          double &maxLat, double &maxLon, double &maxEle) {
+    assert(track_segments.size()>0);
+
+    double tminLat, tminLon, tminEle, tmaxLat, tmaxLon, tmaxEle;
+
+    track_segments[0].boundLatLon(minLat, minLon, minEle, maxLat, maxLon, maxEle);
+
+    for (int i=0; i< track_segments.size(); ++i) {
+
+        track_segments[i].boundLatLon(tminLat, tminLon, tminEle, tmaxLat, tmaxLon, tmaxEle);
+
+        if (tminLat < minLat) minLat = tminLat;
+        if (tmaxLat > maxLat) maxLat = tmaxLat;
+
+        if (tminLon < minLon) minLon = tminLon;
+        if (tmaxLon > maxLon) maxLon = tmaxLon;
+        
+        if (tminEle < minEle) minEle = tminEle;
+        if (tmaxEle > maxEle) maxEle = tmaxEle;
+    }
+}
+
+void GpxFile::boundUTM(double &minX, double &minY, double &minEle,
+                       double &maxX, double &maxY, double &maxEle) {
+    assert(track_segments.size()>0);
+
+    double tminX, tminY, tminEle, tmaxX, tmaxY, tmaxEle;
+
+    track_segments[0].boundUTM(minX, minY, minEle, maxX, maxY, maxEle);
+
+    for (int i=1; i< track_segments.size(); ++i) {
+
+        track_segments[i].boundUTM(tminX, tminY, tminEle, tmaxX, tmaxY, tmaxEle);
+
+        if (tminX < minX) minX = tminX;
+        if (tmaxX > maxX) maxX = tmaxX;
+
+        if (tminY < minY) minY = tminY;
+        if (tmaxY > maxY) maxY = tmaxY;
+        
+        if (tminEle < minEle) minEle = tminEle;
+        if (tmaxEle > maxEle) maxEle = tmaxEle;
+    }
+    
+}
