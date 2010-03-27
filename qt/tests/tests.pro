@@ -1,8 +1,9 @@
 TEMPLATE   = app
 CONFIG    += console
-SOURCES   += testutm.cpp
+SOURCES   += gpxfile.cpp gpxtracksegment.cpp gpxpoint.cpp testutm.cpp
 LIBS += -lGeographic
-QMAKE_CXXFLAGS += -fopenmp -g
-QMAKE_LFLAGS += -fopenmp -g
-QT -= gui
+QMAKE_CXXFLAGS += -g
+QMAKE_LFLAGS += -g
 QT += xml
+QT -= gui
+
