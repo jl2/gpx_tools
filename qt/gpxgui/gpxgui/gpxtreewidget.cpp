@@ -24,30 +24,50 @@
 #include "unitconversion.h"
 
 GpxTreeWidget::GpxTreeWidget(GpxFile *gpx) : _gpx(gpx) {
-    QLayout *mainLayout = new QHBoxLayout;
+    // _gpxTree = new QTreeWidget;
+    QStringList columns = QStringList()
+      << tr("Element")
+      << tr("Length (miles)")
+      << tr("# Pts")
+      << tr("Duration")
+      << tr("Max Speed (mph)")
+      << tr("Avg. Speed (mph)");
 
-    _gpxTree = new QTreeWidget;
-    _gpxTree->setColumnCount(3);
-    _gpxTree->setHeaderLabels(QStringList() << tr("Element") << tr("Length (miles)") << tr("# Pts") << tr("Duration") << tr("Max Speed (mph)") << tr("Avg. Speed (mph)"));
+    setColumnCount(columns.size());
+    
+    setHeaderLabels(columns);
     for (int i=0; i<6; ++i) {
-        _gpxTree->header()->setResizeMode(i, QHeaderView::Stretch);
+        header()->setResizeMode(i, QHeaderView::Stretch);
     }
-
+    setSelectionMode(QAbstractItemView::ContiguousSelection);
     if (_gpx) {
         buildTree();
     }
-    
-    mainLayout->addWidget(_gpxTree);
-    setLayout(mainLayout);
+
+    contextMenu = new QMenu(tr("Track Menu"));
+    mergeAction = new QAction(this);
+    mergeAction->setText(tr("Merge"));
+    mergeAction->setToolTip(tr("Merge the selected tracks into one."));
+    mergeAction->setDisabled(true);
+    contextMenu->addAction(mergeAction);
+
+    removeAction = new QAction(this);
+    removeAction->setText(tr("Remove"));
+    removeAction->setToolTip(tr("Remove the selected tracks."));
+    removeAction->setDisabled(true);
+    contextMenu->addAction(removeAction);
+
+    connect(mergeAction, SIGNAL(triggered()), this, SLOT(mergeTracks()));
+    connect(removeAction, SIGNAL(triggered()), this, SLOT(removeTracks()));
 }
 
 void GpxTreeWidget::buildTree() {
 
-    _gpxTree->clear();
+    clear();
 
     if (_gpx==0) return;
 
-    QTreeWidgetItem *gpxfile = new QTreeWidgetItem(_gpxTree);
+    QTreeWidgetItem *gpxfile = new QTreeWidgetItem(this);
     gpxfile->setText(0, tr("GpxFile"));
     gpxfile->setText(1, tr("%1").arg(meter2mile(_gpx->length())));
     gpxfile->setText(2, tr("%1").arg(_gpx->pointCount()));
@@ -70,4 +90,18 @@ void GpxTreeWidget::buildTree() {
 void GpxTreeWidget::setGpxFile(GpxFile *gpx) {
     _gpx = gpx;
     buildTree();
+}
+
+void GpxTreeWidget::contextMenuEvent(QContextMenuEvent *event) {
+  if (_gpx) {
+    contextMenu->popup(mapToGlobal(event->pos()));
+  }
+}
+
+void GpxTreeWidget::mergeTracks() {
+  
+}
+
+void GpxTreeWidget::removeTracks() {
+  
 }

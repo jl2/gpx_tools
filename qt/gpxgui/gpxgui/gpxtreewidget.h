@@ -19,21 +19,30 @@
 
 #include <QWidget>
 
-class QTreeWidget;
+#include <QTreeWidget>
 
 class GpxFile;
+class QMenu;
+class QAction;
 
-class GpxTreeWidget : public QWidget {
+class GpxTreeWidget : public QTreeWidget {
     Q_OBJECT;
 
 public:
     GpxTreeWidget(GpxFile *gpx = 0);
     void setGpxFile(GpxFile *gpx);
 public slots:
+    void mergeTracks();
+    void removeTracks();
+    protected:
+    void contextMenuEvent(QContextMenuEvent *event);
 
 private:
-    QTreeWidget *_gpxTree;
     GpxFile *_gpx;
+    QMenu *contextMenu;
+
+    QAction *mergeAction;
+    QAction *removeAction;
 
     void buildTree();
 };
