@@ -23,8 +23,8 @@ use Data::Dumper;
 use Math::Trig qw(great_circle_distance deg2rad);
 
 # redirecting STDOUT to hide errors from Data::Manip on Linux (it's a hack, I know)
-#open ERROR, '>', "/dev/null";
-#STDERR->fdopen( \*ERROR, 'w');
+open ERROR, '>', "/dev/null";
+STDERR->fdopen( \*ERROR, 'w');
 
 # Constants
 # =========================================
@@ -32,7 +32,6 @@ my $miles_per_km = 0.621371192;
 my $feet_per_meter = 3.2808399;
 my $pi = 3.14159265;
 my $earth_radius = 6378; # in km
-
 
 # Some ideas for stats I like to have
 # =========================================
@@ -49,14 +48,19 @@ if ($#ARGV < 0)
     exit 1;
 }
 
-# Parse out the GPX file
 my $xml = new XML::Simple;
+
+# Get the resort points
+my $resort_data = $xml->XMLin( "north_america.gpx", ForceArray=>1 );
+my @north_am_resorts = @{$resort_data->{wpt}};
+
+# Parse out the GPX file
 my $data = $xml->XMLin($ARGV[0], ForceArray=>1);
 
 my @trks = @{$data->{trk}};
 my ($max_elevation, $min_elevation, $dist, $temp_distance, $temp_speed, $num_runs, $max_speed, $average_speed) = 0;
-my @speed_vals, @points, @start, @finish, @segs;
-my $going_up = 1;
+my (@speed_vals, @points, @start, @finish, @segs);
+my $resort_skied = "Unknown";
 
 foreach my $trk (@trks)
 {
@@ -70,6 +74,23 @@ foreach my $seg (@segs)
 	$min_elevation = $points[0]->{ele}->[0];
 	for (my $i = 0; $i < $#points; $i++)
 	{
+		if( $resort_skied eq "Unknown" )
+		{
+			my $last_dist = -1;
+			foreach my $res ( @north_am_resorts )
+			{
+				@start = earth_point( $res->{lon}, $res->{lat} );
+				@finish = earth_point( $points[$i]->{lon}, $points[$i]->{lat} );
+
+				$temp_distance = great_circle_distance( @start, @finish, $earth_radius );
+				if( $last_dist == -1 || $temp_distance < $last_dist )
+				{
+					$resort_skied = $res;
+					$last_dist = $temp_distance;
+				}
+			}
+		}
+
 		if( $i+1 <= $#points )
 		{
 			@start = earth_point( $points[$i]->{lon}, $points[$i]->{lat} );
@@ -114,6 +135,13 @@ foreach my $speed ( @speed_vals )
 $average_speed = $average_speed / $#speed_vals;
 
 # Print out skiing data
+print("=============================================\n");
+printf( "Resort: %s\n", $resort_skied->{name}->[0] );
+printf( "Elevation (base): %s\n", $resort_skied->{ele}->[0] );
+printf( "Number of runs: %s\n", $resort_skied->{numruns}->[0] );
+printf( "Number of lifts: %s\n", $resort_skied->{numlifts}->[0] );
+printf( "Website: %s\n", $resort_skied->{url}->[0] );
+print("=============================================\n\n");
 printf( "Total distance travelled: %.1f miles\n", $dist * $miles_per_km);
 printf( "Max speed: %.2f mph\n", $max_speed );
 printf( "Average speed: %.2f mph\n", $average_speed );
