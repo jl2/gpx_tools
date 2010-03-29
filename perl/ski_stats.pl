@@ -23,8 +23,8 @@ use Data::Dumper;
 use Math::Trig qw(great_circle_distance deg2rad);
 
 # redirecting STDOUT to hide errors from Data::Manip on Linux (it's a hack, I know)
-open ERROR, '>', "/dev/null";
-STDERR->fdopen( \*ERROR, 'w');
+#open ERROR, '>', "/dev/null";
+#STDERR->fdopen( \*ERROR, 'w');
 
 # Constants
 # =========================================
@@ -51,7 +51,7 @@ if ($#ARGV < 0)
 my $xml = new XML::Simple;
 
 # Get the resort points
-my $resort_data = $xml->XMLin( "north_america.gpx", ForceArray=>1 );
+my $resort_data = $xml->XMLin( "north_america.xml", ForceArray=>1 );
 my @north_am_resorts = @{$resort_data->{wpt}};
 
 # Parse out the GPX file

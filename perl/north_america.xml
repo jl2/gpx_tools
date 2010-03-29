@@ -1,143 +1,224 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<gpx
-  version="1.0"
-  creator="GPSBabel - http://www.gpsbabel.org"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="http://www.topografix.com/GPX/1/0"
-  xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
-<time>2010-03-29T02:16:06Z</time>
-<bounds minlat="33.392325000" minlon="-149.745555000" maxlat="64.949240000" maxlon="-53.978134000"/>
+<resorts>
 <wpt lat="42.290040000" lon="-74.653352000">
-  <ele>0.000000</ele>
+  <ele>3500</ele>
   <name>Plattekill</name>
-  <cmt>Plattekill</cmt>
-  <desc>Plattekill</desc>
+  <vertical>1100</vertical>
+  <numruns>35</numruns>
+  <numlifts>3</numlifts>
+  <snow>190</snow>
+  <longestrun>2</longestrun>
+  <url>http://www.plattekill.com</url>
 </wpt>
 <wpt lat="42.555346000" lon="-73.290647000">
-  <ele>0.000000</ele>
+  <ele>1245</ele>
   <name>Jiminy Peak</name>
-  <cmt>Jiminy Peak</cmt>
-  <desc>Jiminy Peak</desc>
+  <vertical>1150</vertical>
+  <numruns>44</numruns>
+  <numlifts>9</numlifts>
+  <snow>64</snow>
+  <longestrun>2</longestrun>
+  <url>http://jiminypeak.com</url>
 </wpt>
 <wpt lat="42.620977000" lon="-72.875212000">
-  <ele>0.000000</ele>
+  <ele>660</ele>
   <name>Berkshire East</name>
-  <cmt>Berkshire East</cmt>
-  <desc>Berkshire East</desc>
+  <vertical>1180</vertical>
+  <numruns>45</numruns>
+  <numlifts>6</numlifts>
+  <snow>110</snow>
+  <longestrun>2.5</longestrun>
+  <url>http://www.berkshireeast.com</url>
 </wpt>
 <wpt lat="42.418960000" lon="-73.278147000">
-  <ele>0.000000</ele>
+  <ele>1245</ele>
   <name>Bousquet</name>
-  <cmt>Bousquet</cmt>
-  <desc>Bousquet</desc>
+  <vertical>750</vertical>
+  <numruns>24</numruns>
+  <numlifts>5</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.bousquets.com</url>
 </wpt>
 <wpt lat="43.473846000" lon="-73.817223000">
-  <ele>0.000000</ele>
+  <ele>-1</ele>
   <name>Hickory</name>
-  <cmt>Hickory</cmt>
-  <desc>Hickory</desc>
+  <vertical>-1</vertical>
+  <numruns>8</numruns>
+  <numlifts>5</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.ci.traverse-city.mi.us/Parks_and_Recreation/Hickory_Hills_Ski_Area</url>
 </wpt>
 <wpt lat="43.671686000" lon="-74.006634000">
-  <ele>0.000000</ele>
+  <ele>1300</ele>
   <name>Gore Mt.</name>
-  <cmt>Gore Mt.</cmt>
-  <desc>Gore Mt.</desc>
+  <vertical>2300</vertical>
+  <numruns>88</numruns>
+  <numlifts>13</numlifts>
+  <snow>150</snow>
+  <longestrun>3.9</longestrun>
+  <url>http://www.goremountain.com</url>
 </wpt>
 <wpt lat="42.170211000" lon="-73.472341000">
-  <ele>0.000000</ele>
+  <ele>1000</ele>
   <name>Catamount</name>
-  <cmt>Catamount</cmt>
-  <desc>Catamount</desc>
+  <vertical>1000</vertical>
+  <numruns>32</numruns>
+  <numlifts>6</numlifts>
+  <snow>75</snow>
+  <longestrun>2.5</longestrun>
+  <url>http://www.catamountski.com</url>
 </wpt>
 <wpt lat="42.174151000" lon="-73.320946000">
-  <ele>0.000000</ele>
+  <ele>825</ele>
   <name>Butternut</name>
-  <cmt>Butternut</cmt>
-  <desc>Butternut</desc>
+  <vertical>1000</vertical>
+  <numruns>22</numruns>
+  <numlifts>12</numlifts>
+  <snow>115</snow>
+  <longestrun>1.5</longestrun>
+  <url>http://www.skibutternut.com</url>
 </wpt>
 <wpt lat="43.028903000" lon="-73.513762000">
-  <ele>0.000000</ele>
+  <ele>-1</ele>
   <name>Willard Mt.</name>
-  <cmt>Willard Mt.</cmt>
-  <desc>Willard Mt.</desc>
+  <vertical>-1</vertical>
+  <numruns>14</numruns>
+  <numlifts>5</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.willardmountain.com</url>
 </wpt>
 <wpt lat="42.181524000" lon="-72.893784000">
-  <ele>0.000000</ele>
+  <ele>1025</ele>
   <name>Blandford</name>
-  <cmt>Blandford</cmt>
-  <desc>Blandford</desc>
+  <vertical>465</vertical>
+  <numruns>22</numruns>
+  <numlifts>5</numlifts>
+  <snow>70</snow>
+  <longestrun>.37</longestrun>
+  <url>http://www.skiblandford.org</url>
 </wpt>
 <wpt lat="42.220866000" lon="-71.113333000">
-  <ele>0.000000</ele>
-  <name>Blue Hill</name>
-  <cmt>Blue Hill</cmt>
-  <desc>Blue Hill</desc>
+  <ele>-1</ele>
+  <name>Blue Hills</name>
+  <vertical>309</vertical>
+  <numruns>7</numruns>
+  <numlifts>9</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.ski-bluehills.com</url>
 </wpt>
 <wpt lat="42.743058000" lon="-71.064003000">
-  <ele>0.000000</ele>
+  <ele>-1</ele>
   <name>Ski Bradford</name>
-  <cmt>Ski Bradford</cmt>
-  <desc>Ski Bradford</desc>
+  <vertical>-1</vertical>
+  <numruns>15</numruns>
+  <numlifts>8</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://skibradford.com</url>
 </wpt>
 <wpt lat="42.539821000" lon="-71.439022000">
-  <ele>0.000000</ele>
+  <ele>194</ele>
   <name>Nashoba Valley</name>
-  <cmt>Nashoba Valley</cmt>
-  <desc>Nashoba Valley</desc>
+  <vertical>240</vertical>
+  <numruns>17</numruns>
+  <numlifts>9</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.skinashoba.com</url>
 </wpt>
 <wpt lat="42.190811000" lon="-73.066842000">
-  <ele>0.000000</ele>
+  <ele>-1</ele>
   <name>Otis Ridge</name>
-  <cmt>Otis Ridge</cmt>
-  <desc>Otis Ridge</desc>
+  <vertical>-1</vertical>
+  <numruns>11</numruns>
+  <numlifts>5</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.otisridge.com</url>
 </wpt>
 <wpt lat="42.301550000" lon="-71.683476000">
-  <ele>0.000000</ele>
+  <ele>-1</ele>
   <name>Ski Ward</name>
-  <cmt>Ski Ward</cmt>
-  <desc>Ski Ward</desc>
+  <vertical>220</vertical>
+  <numruns>9</numruns>
+  <numlifts>5</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.skiward.com</url>
 </wpt>
 <wpt lat="42.492094000" lon="-71.880713000">
-  <ele>0.000000</ele>
+  <ele>1006</ele>
   <name>Wachusett Mt.</name>
-  <cmt>Wachusett Mt.</cmt>
-  <desc>Wachusett Mt.</desc>
+  <vertical>1000</vertical>
+  <numruns>22</numruns>
+  <numlifts>8</numlifts>
+  <snow>100</snow>
+  <longestrun>1.33</longestrun>
+  <url>http://www.wachusett.com</url>
 </wpt>
 <wpt lat="43.464458000" lon="-72.462991000">
-  <ele>0.000000</ele>
+  <ele>750</ele>
   <name>Ascutney</name>
-  <cmt>Ascutney</cmt>
-  <desc>Ascutney</desc>
+  <vertical>1800</vertical>
+  <numruns>57</numruns>
+  <numlifts>6</numlifts>
+  <snow>200.4</snow>
+  <longestrun>2.5</longestrun>
+  <url>http://www.ascutney.com</url>
 </wpt>
 <wpt lat="44.420949000" lon="-72.848116000">
-  <ele>0.000000</ele>
+  <ele>1446</ele>
   <name>Bolton Valley</name>
-  <cmt>Bolton Valley</cmt>
-  <desc>Bolton Valley</desc>
+  <vertical>1704</vertical>
+  <numruns>64</numruns>
+  <numlifts>6</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.boltonvalley.com</url>
 </wpt>
 <wpt lat="43.212488000" lon="-72.937163000">
-  <ele>0.000000</ele>
-  <name>Bromley</name>
-  <cmt>Bromley</cmt>
-  <desc>Bromley</desc>
+  <ele>1956</ele>
+  <name>Bromley Mountain</name>
+  <vertical>1334</vertical>
+  <numruns>45</numruns>
+  <numlifts>10</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.bromley.com</url>
 </wpt>
 <wpt lat="44.588147000" lon="-71.916211000">
-  <ele>0.000000</ele>
+  <ele>1256</ele>
   <name>Burke Mountain</name>
-  <cmt>Burke Mountain</cmt>
-  <desc>Burke Mountain</desc>
+  <vertical>2011</vertical>
+  <numruns>45</numruns>
+  <numlifts>5</numlifts>
+  <snow>217</snow>
+  <longestrun>-1</longestrun>
+  <url>http://skiburke.com/main</url>
 </wpt>
 <wpt lat="42.903809000" lon="-72.888731000">
-  <ele>0.000000</ele>
+  <ele>1800</ele>
   <name>Haystack</name>
-  <cmt>Haystack</cmt>
-  <desc>Haystack</desc>
+  <vertical>1400</vertical>
+  <numruns>45</numruns>
+  <numlifts>6</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.haystackclub.com/play/ski</url>
 </wpt>
 <wpt lat="42.966828000" lon="-72.892694000">
-  <ele>0.000000</ele>
+  <ele>1900</ele>
   <name>Mt. Snow</name>
-  <cmt>Mt. Snow</cmt>
-  <desc>Mt. Snow</desc>
+  <vertical>1656</vertical>
+  <numruns>80</numruns>
+  <numlifts>20</numlifts>
+  <snow>156</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.mountsnow.com</url>
 </wpt>
 <wpt lat="44.930851000" lon="-72.498501000">
   <ele>0.000000</ele>
@@ -1041,9 +1122,12 @@
 </wpt>
 <wpt lat="39.638997000" lon="-106.347394000">
   <ele>8120</ele>
+  <vertical></vertical>
   <name>Vail</name>
   <numruns>193</numruns>
   <numlifts>34</numlifts>
+  <snow>190</snow>
+  <longestrun>2</longestrun>
   <url>http://www.vail.com/mountain/mountain-home.aspx</url>
 </wpt>
 <wpt lat="39.599061000" lon="-106.522900000">
@@ -3410,4 +3494,4 @@
   <cmt>Mount-Miller</cmt>
   <desc>Mount-Miller</desc>
 </wpt>
-</gpx>
+</resorts>
