@@ -118,7 +118,6 @@ void GpxTreeWidget::removeTracks() {
 
   QRegExp trackRE("Track ([0-9]+)");
   for (int i=0; i<tracks.size(); ++i) {
-    qDebug() << "Removing " << tracks[i]->text(0);
     int idx = trackRE.indexIn(tracks[i]->text(0));
     if (idx>=0) {
       toRemove.push_back(trackRE.capturedTexts()[1].toInt());
