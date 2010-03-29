@@ -221,70 +221,104 @@
   <url>http://www.mountsnow.com</url>
 </wpt>
 <wpt lat="44.930851000" lon="-72.498501000">
-  <ele>0.000000</ele>
+  <ele>1843</ele>
   <name>Jay Peak</name>
-  <cmt>Jay Peak</cmt>
-  <desc>Jay Peak</desc>
+  <vertical>2015</vertical>
+  <numruns>76</numruns>
+  <numlifts>8</numlifts>
+  <snow>355</snow>
+  <longestrun>3</longestrun>
+  <url>http://www.jaypeakresort.com</url>
 </wpt>
 <wpt lat="43.617394000" lon="-72.803405000">
-  <ele>0.000000</ele>
+  <ele>1165</ele>
   <name>Killington</name>
-  <cmt>Killington</cmt>
-  <desc>Killington</desc>
+  <vertical>3050</vertical>
+  <numruns>141</numruns>
+  <numlifts>30</numlifts>
+  <snow>252</snow>
+  <longestrun>6.2</longestrun>
+  <url>http://www.killington.com</url>
 </wpt>
 <wpt lat="44.201431000" lon="-72.919138000">
-  <ele>0.000000</ele>
+  <ele>1600</ele>
   <name>Mad River Glen</name>
-  <cmt>Mad River Glen</cmt>
-  <desc>Mad River Glen</desc>
+  <vertical>2037</vertical>
+  <numruns>45</numruns>
+  <numlifts>4</numlifts>
+  <snow>250</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.madriverglen.com</url>
 </wpt>
 <wpt lat="44.177794000" lon="-72.901368000">
-  <ele>0.000000</ele>
+  <ele>1483</ele>
   <name>Sugarbush</name>
-  <cmt>Sugarbush</cmt>
-  <desc>Sugarbush</desc>
-</wpt>
-<wpt lat="44.135248000" lon="-72.897743000">
-  <ele>0.000000</ele>
-  <name>Sugarbush</name>
-  <cmt>Sugarbush</cmt>
-  <desc>Sugarbush</desc>
+  <vertical>2600</vertical>
+  <numruns>111</numruns>
+  <numlifts>16</numlifts>
+  <snow>262</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.sugarbush.com</url>
 </wpt>
 <wpt lat="44.544632000" lon="-72.794734000">
-  <ele>0.000000</ele>
+  <ele>1559</ele>
   <name>Stowe</name>
-  <cmt>Stowe</cmt>
-  <desc>Stowe</desc>
+  <vertical>2160</vertical>
+  <numruns>116</numruns>
+  <numlifts>13</numlifts>
+  <snow>333</snow>
+  <longestrun>4.3</longestrun>
+  <url>http://www.stowe.com</url>
 </wpt>
 <wpt lat="44.573102000" lon="-72.773700000">
-  <ele>0.000000</ele>
+  <ele>1030</ele>
   <name>Smugglers Notch</name>
-  <cmt>Smugglers Notch</cmt>
-  <desc>Smugglers Notch</desc>
+  <vertical>2610</vertical>
+  <numruns>78</numruns>
+  <numlifts>8</numlifts>
+  <snow>288</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.smuggs.com</url>
 </wpt>
 <wpt lat="44.394045000" lon="-72.979741000">
-  <ele>0.000000</ele>
+  <ele>-1</ele>
   <name>Cochran&apos;s</name>
-  <cmt>Cochran&apos;s</cmt>
-  <desc>Cochran&apos;s</desc>
+  <vertical>500</vertical>
+  <numruns>5</numruns>
+  <numlifts>4</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.cochranskiarea.com</url>
 </wpt>
 <wpt lat="43.201252000" lon="-72.772675000">
-  <ele>0.000000</ele>
+  <ele>1150</ele>
   <name>Magic Mountain</name>
-  <cmt>Magic Mountain</cmt>
-  <desc>Magic Mountain</desc>
+  <vertical>1700</vertical>
+  <numruns>40</numruns>
+  <numlifts>4</numlifts>
+  <snow>-1</snow>
+  <longestrun>1.6</longestrun>
+  <url>http://www.magicmtn.com</url>
 </wpt>
 <wpt lat="43.113534000" lon="-72.907228000">
-  <ele>0.000000</ele>
+  <ele>1872</ele>
   <name>Stratton</name>
-  <cmt>Stratton</cmt>
-  <desc>Stratton</desc>
+  <vertical>2003</vertical>
+  <numruns>92</numruns>
+  <numlifts>10</numlifts>
+  <snow>180</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.stratton.com</url>
 </wpt>
 <wpt lat="43.402329000" lon="-72.717270000">
-  <ele>0.000000</ele>
+  <ele>1134</ele>
   <name>Okemo</name>
-  <cmt>Okemo</cmt>
-  <desc>Okemo</desc>
+  <vertical>2200</vertical>
+  <numruns>119</numruns>
+  <numlifts>12</numlifts>
+  <snow>199</snow>
+  <longestrun>4.5</longestrun>
+  <url>http://www.okemo.com</url>
 </wpt>
 <wpt lat="43.940844000" lon="-72.973853000">
   <ele>0.000000</ele>
