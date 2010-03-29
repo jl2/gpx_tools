@@ -24,73 +24,76 @@ class QMenu;
 class QAction;
 class QLabel;
 class QSplitter;
-class QListWidget;
-class QListWidgetItem;
-class QStackedWidget;
-class QFrame;
+
+
+class GpxTreeWidget;
 
 class GpxFile;
 
 class GpxGui : public QMainWindow {
-  Q_OBJECT;
+    Q_OBJECT;
 
-  QToolBar *toolBar;
-  QMenu *mainMenu;
-  QMenu *solverMenu;
- public:
-  GpxGui(QWidget *parent = 0);
-  ~GpxGui();
+    QToolBar *toolBar;
+    QMenu *mainMenu;
+    QMenu *solverMenu;
+public:
+    GpxGui(QWidget *parent = 0);
+    ~GpxGui();
   
-  public slots:
-  void openFile();
-  void closeFile();
-  void about();
+public slots:
+    void openFile();
+    void closeFile();
+    void about();
 
- private:
-  void readSettings();
-  void setupActions();
-  void setupFileActions();
-  void setupEditActions();
-  void setupCallPlanActions();
-  void setupToolsActions();
-  void setupHelpActions();
-  void fillInAction(QAction **action, QString text,
-		    QString toolTip, const char *method,
-		    Qt::ConnectionType type, QIcon icon);
-  void fillInAction(QAction **action, QString text,
-		    QString toolTip, const char *method,
-		    QIcon icon);
+private:
+    void readSettings();
+    void setupActions();
+    void setupFileActions();
+    void setupEditActions();
+    void setupCallPlanActions();
+    void setupToolsActions();
+    void setupHelpActions();
+    void fillInAction(QAction **action, QString text,
+                      QString toolTip, const char *method,
+                      Qt::ConnectionType type, QIcon icon);
+    void fillInAction(QAction **action, QString text,
+                      QString toolTip, const char *method,
+                      QIcon icon);
 
 
-  void setupToolBar();
-  void setupMenuBar();
-  void setupStatusBar();
+    void setupToolBar();
+    void setupMenuBar();
+    void setupStatusBar();
 
-  void openFileError(QString what);
+    void openFileError(QString what);
 
-  void disableActionsOnClose();
-  void enableActionsOnOpen();
-  void notYetImplemented();
+    void disableActionsOnClose();
+    void enableActionsOnOpen();
+    void notYetImplemented();
 
-  bool canContinue();
+    bool canContinue();
 
-  void doRedraw();
+    void doRedraw();
   
-  QString openDir;
-  QString curFileName;
-  QString titleBarPrefix;
+    QString openDir;
+    QString curFileName;
+    QString titleBarPrefix;
   
-  QLabel *curDistanceLbl;
-  QLabel *curFileNameLbl;
+    QLabel *curDistanceLbl;
+    QLabel *curFileNameLbl;
   
-  QAction *openAction;
-  QAction *closeAction;
-  QAction *exitAction;
-  QAction *aboutAction;
-  QAction *configAction;
+    QAction *openAction;
+    QAction *closeAction;
+    QAction *exitAction;
+    QAction *aboutAction;
+    QAction *configAction;
 
+    QSplitter *split;
 
     GpxFile *gpx;
+
+    GpxTreeWidget *gpxw;
+    
 };
 
 #endif

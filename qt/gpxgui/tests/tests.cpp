@@ -45,6 +45,8 @@ QString formatDuration(time_t dur) {
 }
 
 void testBounds() {
+    qDebug() << "Testing bounds calculations";
+
     GpxFile gpx2("data/test1.gpx");
     double minLat, minLon, minEle, maxLat, maxLon, maxEle;
     gpx2.boundLatLon(minLat, minLon, minEle,
@@ -58,7 +60,19 @@ void testBounds() {
     assert(maxLat == 39.39);
     assert(maxLon == -105.99);
     assert(maxEle == 60);
+    qDebug() << "Bounds calculation test passed.";
 }
+
+void testFuncCallOp() {
+    qDebug() << "Testing GpxFile::operator()";
+
+    GpxFile gpx("data/test1.gpx");
+    assert(gpx(0).elevation() == 50);
+    assert(gpx(1).elevation() == 55);
+    assert(gpx(2).elevation() == 60);
+    qDebug() << "GpxFile::operator() tests passed";
+}
+
 
 int main() {
 
@@ -81,6 +95,8 @@ int main() {
     }
 
     testBounds();
+
+    testFuncCallOp();
 
     qDebug() << "All tests passed.";
     return 0;

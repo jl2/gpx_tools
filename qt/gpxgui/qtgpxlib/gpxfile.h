@@ -32,14 +32,17 @@
 
 class GpxFile : public GpxElement, public Track {
 public:
-    GpxFile(QString fname);
+    GpxFile(QString fname, bool purgeEmpty = true);
     
     void toXml(QString &xmlStr);
 
     double length();
 
     double maxSpeed();
+
     GpxTrackSegment& operator[](int n);
+
+    GpxPoint &operator()(int n);
 
     void addTrack(const GpxTrackSegment &seg);
     void addPoint(const GpxPoint &pt, int track=-1);
@@ -153,7 +156,7 @@ private:
         }
     };
     
-    bool readFile(QString fname);
+    bool readFile(QString fname, bool purge);
 };
 
 #endif

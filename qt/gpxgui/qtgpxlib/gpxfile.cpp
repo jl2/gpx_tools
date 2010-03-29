@@ -18,8 +18,8 @@
 
 #include <cassert>
 
-GpxFile::GpxFile(QString fname) : _time(QDateTime()) {
-    readFile(fname);
+GpxFile::GpxFile(QString fname, bool purgeEmpty) : _time(QDateTime()) {
+    readFile(fname, purgeEmpty);
 }
     
 void GpxFile::toXml(QString &xmlStr) {
@@ -62,6 +62,18 @@ double GpxFile::maxSpeed() {
 GpxTrackSegment& GpxFile::operator[](int n) {
     assert(n< track_segments.size());
     return track_segments[n];
+}
+
+GpxPoint& GpxFile::operator()(int n) {
+    int nn = n;
+    for (int i=0; i<track_segments.size(); ++i) {
+        if (track_segments[i].pointCount()>nn) {
+            return track_segments[i][nn];
+        } else {
+            nn -= track_segments[i].pointCount();
+        }
+    }
+    assert(nn==0);
 }
 
 void GpxFile::addTrack(const GpxTrackSegment &seg) {
@@ -123,7 +135,7 @@ void GpxFile::purgeEmptyTracks() {
     }
 }
     
-bool GpxFile::readFile(QString fname) {
+bool GpxFile::readFile(QString fname, bool pe) {
     GpxParser handler(*this);
     QFile file( fname );
     QXmlInputSource source( &file );
@@ -132,7 +144,9 @@ bool GpxFile::readFile(QString fname) {
     reader.setFeature("http://trolltech.com/xml/features/report-whitespace-only-CharData", false);
     reader.setContentHandler( &handler );
     reader.parse( source );
-    purgeEmptyTracks();
+
+    if (pe) purgeEmptyTracks();
+
     return true;
 }
 
