@@ -26,7 +26,8 @@
 GpxTreeWidget::GpxTreeWidget(GpxFile *gpx) : _gpx(gpx) {
     // _gpxTree = new QTreeWidget;
     QStringList columns = QStringList()
-      << tr("Element")
+      << tr("Track #")
+      << tr("Name")
       << tr("Length (miles)")
       << tr("# Pts")
       << tr("Duration")
@@ -40,9 +41,6 @@ GpxTreeWidget::GpxTreeWidget(GpxFile *gpx) : _gpx(gpx) {
         header()->setResizeMode(i, QHeaderView::Stretch);
     }
     setSelectionMode(QAbstractItemView::ContiguousSelection);
-    if (_gpx) {
-        buildTree();
-    }
 
     contextMenu = new QMenu(tr("Track Menu"));
     mergeAction = new QAction(this);
@@ -59,32 +57,43 @@ GpxTreeWidget::GpxTreeWidget(GpxFile *gpx) : _gpx(gpx) {
 
     connect(mergeAction, SIGNAL(triggered()), this, SLOT(mergeTracks()));
     connect(removeAction, SIGNAL(triggered()), this, SLOT(removeTracks()));
+    if (_gpx) {
+        buildTree();
+    }
 }
 
 void GpxTreeWidget::buildTree() {
 
     clear();
 
+    removeAction->setEnabled(false);
+    mergeAction->setEnabled(false);
+
     if (_gpx==0) return;
 
     QTreeWidgetItem *gpxfile = new QTreeWidgetItem(this);
+    
     gpxfile->setText(0, tr("GpxFile"));
-    gpxfile->setText(1, tr("%1").arg(meter2mile(_gpx->length())));
-    gpxfile->setText(2, tr("%1").arg(_gpx->pointCount()));
-    gpxfile->setText(3, tr("%1").arg(formatDuration(_gpx->duration(), true)));
-    gpxfile->setText(4, tr("%1").arg(meterPerSecond2MilePerHour(_gpx->maxSpeed())));
-    gpxfile->setText(5, tr("%1").arg(meterPerSecond2MilePerHour(_gpx->averageSpeed())));
+    gpxfile->setText(2, tr("%1").arg(meter2mile(_gpx->length())));
+    gpxfile->setText(3, tr("%1").arg(_gpx->pointCount()));
+    gpxfile->setText(4, tr("%1").arg(formatDuration(_gpx->duration(), true)));
+    gpxfile->setText(5, tr("%1").arg(meterPerSecond2MilePerHour(_gpx->maxSpeed())));
+    gpxfile->setText(6, tr("%1").arg(meterPerSecond2MilePerHour(_gpx->averageSpeed())));
 
     for (int i=0; i<_gpx->segmentCount(); ++i) {
         QTreeWidgetItem *track = new QTreeWidgetItem(gpxfile);
         GpxTrackSegment cur = (*_gpx)[i];
-        track->setText(0, tr("%1 (Track %2)").arg(cur.name()).arg(cur.number()));
-        track->setText(1, tr("%1").arg(meter2mile(cur.length())));
-        track->setText(2, tr("%1").arg(cur.pointCount()));
-        track->setText(3, tr("%1").arg(formatDuration(cur.duration(), true)));
-        track->setText(4, tr("%1").arg(meterPerSecond2MilePerHour(cur.maxSpeed())));
-        track->setText(5, tr("%1").arg(meterPerSecond2MilePerHour(cur.averageSpeed())));
+        track->setText(0, tr("Track %1").arg(cur.number()));
+
+	track->setText(1, tr("%1").arg(cur.name()));
+        track->setText(2, tr("%1").arg(meter2mile(cur.length())));
+        track->setText(3, tr("%1").arg(cur.pointCount()));
+        track->setText(4, tr("%1").arg(formatDuration(cur.duration(), true)));
+        track->setText(5, tr("%1").arg(meterPerSecond2MilePerHour(cur.maxSpeed())));
+        track->setText(6, tr("%1").arg(meterPerSecond2MilePerHour(cur.averageSpeed())));
     }
+    removeAction->setEnabled(true);
+    mergeAction->setEnabled(true);
 }
 
 void GpxTreeWidget::setGpxFile(GpxFile *gpx) {
@@ -99,9 +108,26 @@ void GpxTreeWidget::contextMenuEvent(QContextMenuEvent *event) {
 }
 
 void GpxTreeWidget::mergeTracks() {
-  
 }
 
 void GpxTreeWidget::removeTracks() {
-  
+  if (_gpx==0) return;
+  QList<QTreeWidgetItem*> tracks = selectedItems();
+
+  QList<int> toRemove;
+
+  QRegExp trackRE("Track ([0-9]+)");
+  for (int i=0; i<tracks.size(); ++i) {
+    qDebug() << "Removing " << tracks[i]->text(0);
+    int idx = trackRE.indexIn(tracks[i]->text(0));
+    if (idx>=0) {
+      toRemove.push_back(trackRE.capturedTexts()[1].toInt());
+      delete tracks[i];
+    }
+  }
+
+  qSort(toRemove.begin(), toRemove.end(), qGreater<int>());
+  for (int i=0; i< toRemove.size(); ++i) {
+    _gpx->removeTrack(toRemove[i]-1);
+  }
 }

@@ -69,6 +69,12 @@ void GpxGui::setupFileActions() {
     fillInAction(&openAction, tr("Open..."), tr("Open an GPX file."),
                  SLOT(openFile()), QIcon(":/images/open.png"));
 
+    fillInAction(&saveAction, tr("Save"), tr("Save changes to GPX file."),
+                 SLOT(saveFile()), QIcon(":/images/save.png"));
+
+    fillInAction(&saveAsAction, tr("Save As..."), tr("Save GPX file to a new file."),
+                 SLOT(saveAsFile()), QIcon(":/images/save.png"));
+
     fillInAction(&closeAction, tr("Close"), tr("Close current GPX file."),
                  SLOT(closeFile()), QIcon(":/images/close.png"));
 
@@ -93,6 +99,7 @@ void GpxGui::setupActions() {
 void GpxGui::setupToolBar() {
     QToolBar *tb = new QToolBar("Main", this);
     tb->addAction(openAction);
+    tb->addAction(saveAsAction);
     tb->addAction(closeAction);
     addToolBar(tb);
 }
@@ -100,6 +107,8 @@ void GpxGui::setupToolBar() {
 void GpxGui::setupMenuBar() {
     QMenu *fileMenu = menuBar()->addMenu(tr("&File"));
     fileMenu->addAction(openAction);
+    fileMenu->addAction(saveAction);
+    fileMenu->addAction(saveAsAction);
     fileMenu->addAction(closeAction);
     fileMenu->addSeparator();
     fileMenu->addAction(exitAction);
@@ -153,17 +162,17 @@ void GpxGui::openFile() {
     if (gpx) delete gpx;
 
     gpx = new GpxFile(newFileName, true);
-    
     curFileName = newFileName;
-
-    curFileNameLbl->setText(curFileName);
-    curDistanceLbl->setText(tr("%1 meters").arg(gpx->length()));
-
-    setWindowTitle(tr("%1 - %2").arg(titleBarPrefix).arg(newFileName));
+    
     enableActionsOnOpen();
     gpxw->setGpxFile(gpx);
 }
+void GpxGui::updateUI() {
+  curFileNameLbl->setText(curFileName);
+  curDistanceLbl->setText(tr("%1 meters").arg(gpx->length()));
 
+  setWindowTitle(tr("%1 - %2").arg(titleBarPrefix).arg(curFileName));
+}
 void GpxGui::openFileError(QString what) {
     QMessageBox::critical(this, tr("Failed"),
                           tr("Oops! That's a bad GPX file:\n%1").arg(what),
@@ -173,9 +182,13 @@ void GpxGui::openFileError(QString what) {
 
 void GpxGui::disableActionsOnClose() {
     closeAction->setDisabled(true);
+    saveAction->setDisabled(true);
+    saveAsAction->setDisabled(true);
 }
 void GpxGui::enableActionsOnOpen() {
     closeAction->setDisabled(false);
+    saveAction->setDisabled(false);
+    saveAsAction->setDisabled(false);
 }
 
 void GpxGui::closeFile() {
@@ -199,4 +212,38 @@ void GpxGui::about() {
                        tr("About"),
                        tr("<h2>GpxGui</h2>"
                           "<p>By Jeremiah LaRocco.</p>"));
+}
+
+void GpxGui::saveFile() {
+  if (gpx==0) return;
+
+  QString strValue;
+  gpx->toXml(strValue);
+
+  QFile file( curFileName );
+  if (file.open(QIODevice::WriteOnly)) {
+    QTextStream out(&file);
+    out << strValue;
+  }
+}
+
+void GpxGui::saveAsFile() {
+  if (gpx==0) return;
+  QString newFileName = QFileDialog::getSaveFileName(this,
+						     tr("Choose a file to save to"),
+						     openDir,
+						     tr("GPX Files (*.gpx)"));
+  if (newFileName == tr("")) return;
+  curFileName = newFileName;
+    
+
+  QString strValue;
+  gpx->toXml(strValue);
+
+  QFile file( newFileName );
+  if (file.open(QIODevice::WriteOnly)) {
+    QTextStream out(&file);
+    out << strValue;
+  }
+  updateUI();
 }

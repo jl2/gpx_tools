@@ -58,6 +58,8 @@ public:
     time_t duration();
     void purgeEmptyTracks();
 
+    void removeTrack(int idx);
+
     void boundLatLon(double &minLat, double &minLon, double &minEle,
                      double &maxLat, double &maxLon, double &maxEle);
 

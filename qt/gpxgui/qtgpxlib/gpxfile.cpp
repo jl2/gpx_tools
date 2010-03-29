@@ -196,3 +196,7 @@ void GpxFile::boundUTM(double &minX, double &minY, double &minEle,
     }
     
 }
+void GpxFile::removeTrack(int idx) {
+  assert(idx>0 && idx < track_segments.size());
+  track_segments.removeAt(idx);
+}

@@ -42,6 +42,8 @@ public:
   
 public slots:
     void openFile();
+    void saveFile();
+    void saveAsFile();
     void closeFile();
     void about();
 
@@ -74,7 +76,9 @@ private:
     bool canContinue();
 
     void doRedraw();
-  
+
+    void updateUI();
+
     QString openDir;
     QString curFileName;
     QString titleBarPrefix;
@@ -83,6 +87,8 @@ private:
     QLabel *curFileNameLbl;
   
     QAction *openAction;
+    QAction *saveAction;
+    QAction *saveAsAction;
     QAction *closeAction;
     QAction *exitAction;
     QAction *aboutAction;
