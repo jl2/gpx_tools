@@ -59,6 +59,7 @@ public:
     void purgeEmptyTracks();
 
     void removeTrack(int idx);
+    void removeTrackByName(QString name);
 
     void boundLatLon(double &minLat, double &minLon, double &minEle,
                      double &maxLat, double &maxLon, double &maxEle);

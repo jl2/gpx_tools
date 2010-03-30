@@ -45,6 +45,7 @@ private:
     QAction *removeAction;
 
     void buildTree();
+    void recompute();
 };
 
 #endif

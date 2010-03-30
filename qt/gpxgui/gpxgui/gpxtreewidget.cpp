@@ -26,13 +26,13 @@
 GpxTreeWidget::GpxTreeWidget(GpxFile *gpx) : _gpx(gpx) {
     // _gpxTree = new QTreeWidget;
     QStringList columns = QStringList()
-      << tr("Track #")
-      << tr("Name")
-      << tr("Length (miles)")
-      << tr("# Pts")
-      << tr("Duration")
-      << tr("Max Speed (mph)")
-      << tr("Avg. Speed (mph)");
+        << tr("Track #")
+        << tr("Name")
+        << tr("Length (miles)")
+        << tr("# Pts")
+        << tr("Duration")
+        << tr("Max Speed (mph)")
+        << tr("Avg. Speed (mph)");
 
     setColumnCount(columns.size());
     
@@ -85,7 +85,7 @@ void GpxTreeWidget::buildTree() {
         GpxTrackSegment cur = (*_gpx)[i];
         track->setText(0, tr("Track %1").arg(cur.number()));
 
-	track->setText(1, tr("%1").arg(cur.name()));
+        track->setText(1, tr("%1").arg(cur.name()));
         track->setText(2, tr("%1").arg(meter2mile(cur.length())));
         track->setText(3, tr("%1").arg(cur.pointCount()));
         track->setText(4, tr("%1").arg(formatDuration(cur.duration(), true)));
@@ -102,31 +102,31 @@ void GpxTreeWidget::setGpxFile(GpxFile *gpx) {
 }
 
 void GpxTreeWidget::contextMenuEvent(QContextMenuEvent *event) {
-  if (_gpx) {
-    contextMenu->popup(mapToGlobal(event->pos()));
-  }
+    if (_gpx) {
+        contextMenu->popup(mapToGlobal(event->pos()));
+    }
 }
 
 void GpxTreeWidget::mergeTracks() {
 }
 
 void GpxTreeWidget::removeTracks() {
-  if (_gpx==0) return;
-  QList<QTreeWidgetItem*> tracks = selectedItems();
+    if (_gpx==0) return;
+    QList<QTreeWidgetItem*> tracks = selectedItems();
 
-  QList<int> toRemove;
+    QList<QString> toRemove;
 
-  QRegExp trackRE("Track ([0-9]+)");
-  for (int i=0; i<tracks.size(); ++i) {
-    int idx = trackRE.indexIn(tracks[i]->text(0));
-    if (idx>=0) {
-      toRemove.push_back(trackRE.capturedTexts()[1].toInt());
-      delete tracks[i];
+    QRegExp trackRE("Track ([0-9]+)");
+    for (int i=0; i<tracks.size(); ++i) {
+        toRemove.push_back(tracks[i]->text(1));
+        delete tracks[i];
     }
-  }
 
-  qSort(toRemove.begin(), toRemove.end(), qGreater<int>());
-  for (int i=0; i< toRemove.size(); ++i) {
-    _gpx->removeTrack(toRemove[i]-1);
-  }
+    for (int i=0; i<toRemove.size(); ++i) {
+        _gpx->removeTrackByName(toRemove[i]);
+    }
+}
+
+void GpxTreeWidget::recompute() {
+    
 }

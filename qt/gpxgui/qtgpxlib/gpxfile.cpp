@@ -200,3 +200,12 @@ void GpxFile::removeTrack(int idx) {
   assert(idx>0 && idx < track_segments.size());
   track_segments.removeAt(idx);
 }
+
+void GpxFile::removeTrackByName(QString name) {
+    for (int i=0; i<track_segments.size(); ++i) {
+        if (track_segments[i].name() == name) {
+            track_segments.removeAt(i);
+            return;
+        }
+    }
+}
