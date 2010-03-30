@@ -321,40 +321,64 @@
   <url>http://www.okemo.com</url>
 </wpt>
 <wpt lat="43.940844000" lon="-72.973853000">
-  <ele>0.000000</ele>
+  <ele>1600</ele>
   <name>Middlebury College Snow Bowl 2h 15m</name>
-  <cmt>Middlebury College Snow Bowl 2h 15m</cmt>
-  <desc>Middlebury College Snow Bowl 2h 15m</desc>
+  <vertical>1040</vertical>
+  <numruns>17</numruns>
+  <numlifts>3</numlifts>
+  <snow>250</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.middlebury.edu/about/facilities/snow_bowl</url>
 </wpt>
 <wpt lat="43.662173000" lon="-72.841884000">
-  <ele>0.000000</ele>
+  <ele>2000</ele>
   <name>Pico</name>
-  <cmt>Pico</cmt>
-  <desc>Pico</desc>
+  <vertical>1967</vertical>
+  <numruns>50</numruns>
+  <numlifts>6</numlifts>
+  <snow>250</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.picomountain.com</url>
 </wpt>
 <wpt lat="43.650249000" lon="-72.422618000">
-  <ele>0.000000</ele>
+  <ele>-1</ele>
   <name>Quechee</name>
-  <cmt>Quechee</cmt>
-  <desc>Quechee</desc>
+  <vertical>-1</vertical>
+  <numruns>-1</numruns>
+  <numlifts>-1</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url></url>
 </wpt>
 <wpt lat="43.653506000" lon="-72.531798000">
-  <ele>0.000000</ele>
+  <ele>550</ele>
   <name>Suicide Six</name>
-  <cmt>Suicide Six</cmt>
-  <desc>Suicide Six</desc>
+  <vertical>650</vertical>
+  <numruns>23</numruns>
+  <numlifts>3</numlifts>
+  <snow>110</snow>
+  <longestrun>1</longestrun>
+  <url>http://suicide6.com</url>
 </wpt>
 <wpt lat="41.836997000" lon="-73.316233000">
-  <ele>0.000000</ele>
+  <ele>-1</ele>
   <name>Mohawk Mountain</name>
-  <cmt>Mohawk Mountain</cmt>
-  <desc>Mohawk Mountain</desc>
+  <vertical>650</vertical>
+  <numruns>24</numruns>
+  <numlifts>7</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.mohawkmtn.com</url>
 </wpt>
 <wpt lat="41.591120000" lon="-72.928362000">
-  <ele>0.000000</ele>
+  <ele>100</ele>
   <name>Mt. Southington</name>
-  <cmt>Mt. Southington</cmt>
-  <desc>Mt. Southington</desc>
+  <vertical>425</vertical>
+  <numruns>14</numruns>
+  <numlifts>7</numlifts>
+  <snow>-1</snow>
+  <longestrun>.875</longestrun>
+  <url>http://www.mountsouthington.com</url>
 </wpt>
 <wpt lat="41.494512000" lon="-72.732829000">
   <ele>0.000000</ele>
