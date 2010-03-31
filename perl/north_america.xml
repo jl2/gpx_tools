@@ -1831,94 +1831,94 @@
   <url>http://www.aspensnowmass.com</url>
 </wpt>
 <wpt lat="38.908005000" lon="-106.962104000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>9375</ele>
+  <vertical>2787</vertical>
   <name>Crested Butte</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>121</numruns>
+  <numlifts>15</numlifts>
+  <snow>240</snow>
+  <longestrun>2.6</longestrun>
+  <url>http://www.skicb.com</url>
 </wpt>
 <wpt lat="37.375506000" lon="-105.098589000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>9248</ele>
+  <vertical>1562</vertical>
   <name>Cuchara</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>25</numruns>
+  <numlifts>6</numlifts>
+  <snow>200</snow>
+  <longestrun>2.5</longestrun>
+  <url>http://www.coloradoskihistory.com/news/reopening/cuchara.html</url>
 </wpt>
 <wpt lat="40.482531000" lon="-106.836323000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>6969</ele>
+  <vertical>440</vertical>
   <name>Howelsen Hill</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>15</numruns>
+  <numlifts>4</numlifts>
+  <snow>-1</snow>
+  <longestrun>1</longestrun>
+  <url>http://steamboatsprings.net/departments/parks_recreation/facilities/howelsen_hill_ski_area</url>
 </wpt>
 <wpt lat="37.789541000" lon="-107.670702000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>9300</ele>
+  <vertical>-1</vertical>
   <name>Kendall Mountain</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>8</numruns>
+  <numlifts>1</numlifts>
+  <snow>200</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.coloradodirectory.com/skikendall</url>
 </wpt>
 <wpt lat="37.888127000" lon="-107.655888000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>10400</ele>
+  <vertical>3087</vertical>
   <name>Silverton</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>-1</numruns>
+  <numlifts>1</numlifts>
+  <snow>400</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.silvertonmountain.com</url>
 </wpt>
 <wpt lat="38.539854000" lon="-106.309483000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>10790</ele>
+  <vertical>1170</vertical>
   <name>Monarch</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>54</numruns>
+  <numlifts>5</numlifts>
+  <snow>350</snow>
+  <longestrun>1</longestrun>
+  <url>http://www.skimonarch.com</url>
 </wpt>
 <wpt lat="39.069289000" lon="-108.148514000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>8200</ele>
+  <vertical>1650</vertical>
   <name>Powderhorn</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>37</numruns>
+  <numlifts>4</numlifts>
+  <snow>250</snow>
+  <longestrun>2</longestrun>
+  <url>http://www.powderhorn.com</url>
 </wpt>
 <wpt lat="37.410719000" lon="-107.844264000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>8793</ele>
+  <vertical>2029</vertical>
   <name>Durango</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>85</numruns>
+  <numlifts>10</numlifts>
+  <snow>260</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.durangomountainresort.com</url>
 </wpt>
 <wpt lat="39.461489000" lon="-106.338302000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>10500</ele>
+  <vertical>1200</vertical>
   <name>Ski Cooper</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>26</numruns>
+  <numlifts>4</numlifts>
+  <snow>250</snow>
+  <longestrun>1.4</longestrun>
+  <url>http://www.skicooper.com</url>
 </wpt>
 <wpt lat="36.393569000" lon="-105.284478000">
   <ele></ele>
