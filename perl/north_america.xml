@@ -381,64 +381,104 @@
   <url>http://www.mountsouthington.com</url>
 </wpt>
 <wpt lat="41.494512000" lon="-72.732829000">
-  <ele>0.000000</ele>
+  <ele>-1</ele>
   <name>Powder Ridge</name>
-  <cmt>Powder Ridge</cmt>
-  <desc>Powder Ridge</desc>
+  <vertical>-1</vertical>
+  <numruns>12</numruns>
+  <numlifts>4</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.powderridge.com</url>
 </wpt>
 <wpt lat="41.902147000" lon="-72.952321000">
-  <ele>0.000000</ele>
+  <ele>450</ele>
   <name>Ski Sundown</name>
-  <cmt>Ski Sundown</cmt>
-  <desc>Ski Sundown</desc>
+  <vertical>625</vertical>
+  <numruns>15</numruns>
+  <numlifts>4</numlifts>
+  <snow>-1</snow>
+  <longestrun>1</longestrun>
+  <url>http://www.skisundown.com</url>
 </wpt>
 <wpt lat="41.596523000" lon="-73.278349000">
-  <ele>0.000000</ele>
+  <ele>200</ele>
   <name>Woodbury Ski Area</name>
-  <cmt>Woodbury Ski Area</cmt>
-  <desc>Woodbury Ski Area</desc>
+  <vertical>300</vertical>
+  <numruns>15</numruns>
+  <numlifts>6</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.woodburyskiarea.com</url>
 </wpt>
 <wpt lat="41.516305000" lon="-71.527195000">
-  <ele>0.000000</ele>
+  <ele>70</ele>
   <name>Yawgoo Valley</name>
-  <cmt>Yawgoo Valley</cmt>
-  <desc>Yawgoo Valley</desc>
+  <vertical>310</vertical>
+  <numruns>14</numruns>
+  <numlifts>5</numlifts>
+  <snow>39</snow>
+  <longestrun>0.41</longestrun>
+  <url>http://www.yawgoo.com</url>
 </wpt>
 <wpt lat="42.817091000" lon="-74.029685000">
-  <ele>0.000000</ele>
+  <ele>-1</ele>
   <name>Maple Ski Ridge</name>
-  <cmt>Maple Ski Ridge</cmt>
-  <desc>Maple Ski Ridge</desc>
+  <vertical>-1</vertical>
+  <numruns>8</numruns>
+  <numlifts>4</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.mapleskiridge.com</url>
 </wpt>
 <wpt lat="43.519116000" lon="-74.342883000">
-  <ele>0.000000</ele>
+  <ele>1750</ele>
   <name>Oak Mountain</name>
-  <cmt>Oak Mountain</cmt>
-  <desc>Oak Mountain</desc>
+  <vertical>650</vertical>
+  <numruns>14</numruns>
+  <numlifts>3</numlifts>
+  <snow>120</snow>
+  <longestrun>1.5</longestrun>
+  <url>http://www.oakmountainski.com</url>
 </wpt>
 <wpt lat="43.127041000" lon="-74.498514000">
-  <ele>0.000000</ele>
+  <ele>-1</ele>
   <name>Royal Mountain</name>
-  <cmt>Royal Mountain</cmt>
-  <desc>Royal Mountain</desc>
+  <vertical>-1</vertical>
+  <numruns>13</numruns>
+  <numlifts>3</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.royalmountain.com/royalski/index.html</url>
 </wpt>
 <wpt lat="42.125830000" lon="-74.488369000">
-  <ele>0.000000</ele>
+  <ele>2024</ele>
   <name>Belleayre</name>
-  <cmt>Belleayre</cmt>
-  <desc>Belleayre</desc>
+  <vertical>1403</vertical>
+  <numruns>47</numruns>
+  <numlifts>8</numlifts>
+  <snow>141</snow>
+  <longestrun>2.3</longestrun>
+  <url>http://www.belleayre.com</url>
 </wpt>
 <wpt lat="42.203930000" lon="-74.207032000">
-  <ele>0.000000</ele>
+  <ele>1600</ele>
   <name>Hunter Mt.</name>
-  <cmt>Hunter Mt.</cmt>
-  <desc>Hunter Mt.</desc>
+  <vertical>1600</vertical>
+  <numruns>55</numruns>
+  <numlifts>11</numlifts>
+  <snow>-1</snow>
+  <longestrun>1.04</longestrun>
+  <url>http://www.huntermtn.com</url>
 </wpt>
 <wpt lat="42.303346000" lon="-74.243503000">
-  <ele>0.000000</ele>
+  <ele>1500</ele>
   <name>Ski Windham</name>
-  <cmt>Ski Windham</cmt>
-  <desc>Ski Windham</desc>
+  <vertical>1600</vertical>
+  <numruns>46</numruns>
+  <numlifts>11</numlifts>
+  <snow>-1</snow>
+  <longestrun>2.37</longestrun>
+  <url>http://www.windhammountain.com</url>
 </wpt>
 <wpt lat="43.295169000" lon="-73.728573000">
   <ele>0.000000</ele>
@@ -1149,38 +1189,58 @@
   <desc>Beaver Mountain</desc>
 </wpt>
 <wpt lat="39.642948000" lon="-105.867591000">
-  <ele>0.000000</ele>
+  <ele>10780</ele>
+  <vertical>2270</vertical>
   <name>Arapahoe Basin</name>
-  <cmt>Arapahoe Basin</cmt>
-  <desc>Arapahoe Basin</desc>
+  <numruns>105</numruns>
+  <numlifts>7</numlifts>
+  <snow>350</snow>
+  <longestrun>1.5</longestrun>
+  <url>http://arapahoebasin.com</url>
 </wpt>
 <wpt lat="39.682720000" lon="-105.895273000">
-  <ele>0.000000</ele>
+  <ele>10400</ele>
+  <vertical>2210</vertical>
   <name>Loveland</name>
-  <cmt>Loveland</cmt>
-  <desc>Loveland</desc>
+  <numruns>77</numruns>
+  <numlifts>11</numlifts>
+  <snow>400</snow>
+  <longestrun>2</longestrun>
+  <url>http://www.skiloveland.com</url>
 </wpt>
 <wpt lat="39.604348000" lon="-105.945804000">
-  <ele>0.000000</ele>
+  <ele>9280</ele>
+  <vertical>3128</vertical>
   <name>Keystone</name>
-  <cmt>Keystone</cmt>
-  <desc>Keystone</desc>
+  <numruns>117</numruns>
+  <numlifts>19</numlifts>
+  <snow>230</snow>
+  <longestrun>3.5</longestrun>
+  <url>http://www.keystoneresort.com</url>
 </wpt>
 <wpt lat="39.480451000" lon="-106.067944000">
-  <ele>0.000000</ele>
+  <ele>9600</ele>
+  <vertical>3398</vertical>
   <name>Breckenridge</name>
-  <cmt>Breckenridge</cmt>
-  <desc>Breckenridge</desc>
+  <numruns>155</numruns>
+  <numlifts>30</numlifts>
+  <snow>300</snow>
+  <longestrun>3.5</longestrun>
+  <url>http://www.breckenridge.com</url>
 </wpt>
 <wpt lat="39.502714000" lon="-106.143467000">
-  <ele>0.000000</ele>
+  <ele>9712</ele>
+  <vertical>2601</vertical>
   <name>Copper Mountain</name>
-  <cmt>Copper Mountain</cmt>
-  <desc>Copper Mountain</desc>
+  <numruns>125</numruns>
+  <numlifts>22</numlifts>
+  <snow>280</snow>
+  <longestrun>2.8</longestrun>
+  <url>http://www.coppercolorado.com</url>
 </wpt>
 <wpt lat="39.638997000" lon="-106.347394000">
   <ele>8120</ele>
-  <vertical></vertical>
+  <vertical>3450</vertical>
   <name>Vail</name>
   <numruns>193</numruns>
   <numlifts>34</numlifts>
@@ -1189,130 +1249,214 @@
   <url>http://www.vail.com/mountain/mountain-home.aspx</url>
 </wpt>
 <wpt lat="39.599061000" lon="-106.522900000">
-  <ele>0.000000</ele>
+  <ele></ele>
+  <vertical></vertical>
   <name>Beaver Creek</name>
-  <cmt>Beaver Creek</cmt>
-  <desc>Beaver Creek</desc>
+  <numruns></numruns>
+  <numlifts></numlifts>
+  <snow></snow>
+  <longestrun></longestrun>
+  <url></url>
 </wpt>
 <wpt lat="39.890020000" lon="-105.764183000">
-  <ele>0.000000</ele>
+  <ele></ele>
+  <vertical></vertical>
   <name>Winter Park</name>
-  <cmt>Winter Park</cmt>
-  <desc>Winter Park</desc>
+  <numruns></numruns>
+  <numlifts></numlifts>
+  <snow></snow>
+  <longestrun></longestrun>
+  <url></url>
 </wpt>
 <wpt lat="37.934300000" lon="-107.812637000">
-  <ele>0.000000</ele>
+  <ele></ele>
+  <vertical></vertical>
   <name>Telluride</name>
-  <cmt>Telluride</cmt>
-  <desc>Telluride</desc>
+  <numruns></numruns>
+  <numlifts></numlifts>
+  <snow></snow>
+  <longestrun></longestrun>
+  <url></url>
 </wpt>
 <wpt lat="39.398272000" lon="-107.337982000">
-  <ele>0.000000</ele>
+  <ele></ele>
+  <vertical></vertical>
   <name>Sunlight</name>
-  <cmt>Sunlight</cmt>
-  <desc>Sunlight</desc>
+  <numruns></numruns>
+  <numlifts></numlifts>
+  <snow></snow>
+  <longestrun></longestrun>
+  <url></url>
 </wpt>
 <wpt lat="37.534256000" lon="-106.759367000">
-  <ele>0.000000</ele>
+  <ele></ele>
+  <vertical></vertical>
   <name>Wolf Creek</name>
-  <cmt>Wolf Creek</cmt>
-  <desc>Wolf Creek</desc>
+  <numruns></numruns>
+  <numlifts></numlifts>
+  <snow></snow>
+  <longestrun></longestrun>
+  <url></url>
 </wpt>
 <wpt lat="40.042697000" lon="-105.934684000">
-  <ele>0.000000</ele>
+  <ele></ele>
+  <vertical></vertical>
   <name>SolVista</name>
-  <cmt>SolVista</cmt>
-  <desc>SolVista</desc>
+  <numruns></numruns>
+  <numlifts></numlifts>
+  <snow></snow>
+  <longestrun></longestrun>
+  <url></url>
 </wpt>
 <wpt lat="40.458289000" lon="-106.803765000">
-  <ele>0.000000</ele>
+  <ele></ele>
+  <vertical></vertical>
   <name>Steamboat</name>
-  <cmt>Steamboat</cmt>
-  <desc>Steamboat</desc>
+  <numruns></numruns>
+  <numlifts></numlifts>
+  <snow></snow>
+  <longestrun></longestrun>
+  <url></url>
 </wpt>
 <wpt lat="39.186154000" lon="-106.822927000">
-  <ele>0.000000</ele>
+  <ele></ele>
+  <vertical></vertical>
   <name>Aspen</name>
-  <cmt>Aspen</cmt>
-  <desc>Aspen</desc>
+  <numruns></numruns>
+  <numlifts></numlifts>
+  <snow></snow>
+  <longestrun></longestrun>
+  <url></url>
 </wpt>
 <wpt lat="39.205350000" lon="-106.953886000">
-  <ele>0.000000</ele>
+  <ele></ele>
+  <vertical></vertical>
   <name>Snowmass</name>
-  <cmt>Snowmass</cmt>
-  <desc>Snowmass</desc>
+  <numruns></numruns>
+  <numlifts></numlifts>
+  <snow></snow>
+  <longestrun></longestrun>
+  <url></url>
 </wpt>
 <wpt lat="39.170299000" lon="-106.869709000">
-  <ele>0.000000</ele>
+  <ele></ele>
+  <vertical></vertical>
   <name>Aspen Highlands</name>
-  <cmt>Aspen Highlands</cmt>
-  <desc>Aspen Highlands</desc>
+  <numruns></numruns>
+  <numlifts></numlifts>
+  <snow></snow>
+  <longestrun></longestrun>
+  <url></url>
 </wpt>
 <wpt lat="39.205447000" lon="-106.858844000">
-  <ele>0.000000</ele>
+  <ele></ele>
+  <vertical></vertical>
   <name>Buttermilk</name>
-  <cmt>Buttermilk</cmt>
-  <desc>Buttermilk</desc>
+  <numruns></numruns>
+  <numlifts></numlifts>
+  <snow></snow>
+  <longestrun></longestrun>
+  <url></url>
 </wpt>
 <wpt lat="38.908005000" lon="-106.962104000">
-  <ele>0.000000</ele>
+  <ele></ele>
+  <vertical></vertical>
   <name>Crested Butte</name>
-  <cmt>Crested Butte</cmt>
-  <desc>Crested Butte</desc>
+  <numruns></numruns>
+  <numlifts></numlifts>
+  <snow></snow>
+  <longestrun></longestrun>
+  <url></url>
 </wpt>
 <wpt lat="37.375506000" lon="-105.098589000">
-  <ele>0.000000</ele>
+  <ele></ele>
+  <vertical></vertical>
   <name>Cuchara</name>
-  <cmt>Cuchara</cmt>
-  <desc>Cuchara</desc>
+  <numruns></numruns>
+  <numlifts></numlifts>
+  <snow></snow>
+  <longestrun></longestrun>
+  <url></url>
 </wpt>
 <wpt lat="40.482531000" lon="-106.836323000">
-  <ele>0.000000</ele>
+  <ele></ele>
+  <vertical></vertical>
   <name>Howelsen Hill</name>
-  <cmt>Howelsen Hill</cmt>
-  <desc>Howelsen Hill</desc>
+  <numruns></numruns>
+  <numlifts></numlifts>
+  <snow></snow>
+  <longestrun></longestrun>
+  <url></url>
 </wpt>
 <wpt lat="37.789541000" lon="-107.670702000">
-  <ele>0.000000</ele>
+  <ele></ele>
+  <vertical></vertical>
   <name>Kendall Mountain</name>
-  <cmt>Kendall Mountain</cmt>
-  <desc>Kendall Mountain</desc>
+  <numruns></numruns>
+  <numlifts></numlifts>
+  <snow></snow>
+  <longestrun></longestrun>
+  <url></url>
 </wpt>
 <wpt lat="37.888127000" lon="-107.655888000">
-  <ele>0.000000</ele>
+  <ele></ele>
+  <vertical></vertical>
   <name>Silverton</name>
-  <cmt>Silverton</cmt>
-  <desc>Silverton</desc>
+  <numruns></numruns>
+  <numlifts></numlifts>
+  <snow></snow>
+  <longestrun></longestrun>
+  <url></url>
 </wpt>
 <wpt lat="38.539854000" lon="-106.309483000">
-  <ele>0.000000</ele>
+  <ele></ele>
+  <vertical></vertical>
   <name>Monarch</name>
-  <cmt>Monarch</cmt>
-  <desc>Monarch</desc>
+  <numruns></numruns>
+  <numlifts></numlifts>
+  <snow></snow>
+  <longestrun></longestrun>
+  <url></url>
 </wpt>
 <wpt lat="39.069289000" lon="-108.148514000">
-  <ele>0.000000</ele>
+  <ele></ele>
+  <vertical></vertical>
   <name>Powderhorn</name>
-  <cmt>Powderhorn</cmt>
-  <desc>Powderhorn</desc>
+  <numruns></numruns>
+  <numlifts></numlifts>
+  <snow></snow>
+  <longestrun></longestrun>
+  <url></url>
 </wpt>
 <wpt lat="37.410719000" lon="-107.844264000">
-  <ele>0.000000</ele>
+  <ele></ele>
+  <vertical></vertical>
   <name>Durango</name>
-  <cmt>Durango</cmt>
-  <desc>Durango</desc>
+  <numruns></numruns>
+  <numlifts></numlifts>
+  <snow></snow>
+  <longestrun></longestrun>
+  <url></url>
 </wpt>
 <wpt lat="39.461489000" lon="-106.338302000">
-  <ele>0.000000</ele>
+  <ele></ele>
+  <vertical></vertical>
   <name>Ski Cooper</name>
-  <cmt>Ski Cooper</cmt>
-  <desc>Ski Cooper</desc>
+  <numruns></numruns>
+  <numlifts></numlifts>
+  <snow></snow>
+  <longestrun></longestrun>
+  <url></url>
 </wpt>
 <wpt lat="36.393569000" lon="-105.284478000">
-  <ele>0.000000</ele>
+  <ele></ele>
+  <vertical></vertical>
   <name>Angel Fire</name>
-  <cmt>Angel Fire</cmt>
-  <desc>Angel Fire</desc>
+  <numruns></numruns>
+  <numlifts></numlifts>
+  <snow></snow>
+  <longestrun></longestrun>
+  <url></url>
 </wpt>
 <wpt lat="36.593434000" lon="-105.449928000">
   <ele>0.000000</ele>
