@@ -1921,34 +1921,34 @@
   <url>http://www.skicooper.com</url>
 </wpt>
 <wpt lat="36.393569000" lon="-105.284478000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>8600</ele>
+  <vertical>2077</vertical>
   <name>Angel Fire</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>74</numruns>
+  <numlifts>7</numlifts>
+  <snow>210</snow>
+  <longestrun>3.2</longestrun>
+  <url>http://www.angelfireresort.com/winter</url>
 </wpt>
 <wpt lat="36.593434000" lon="-105.449928000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>9207</ele>
+  <vertical>2612</vertical>
   <name>Taos</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>110</numruns>
+  <numlifts>13</numlifts>
+  <snow>305</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.skitaos.org</url>
 </wpt>
 <wpt lat="36.707377000" lon="-105.409163000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>8750</ele>
+  <vertical>1600</vertical>
   <name>Red River</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>57</numruns>
+  <numlifts>7</numlifts>
+  <snow>214</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.redriverskiarea.com</url>
 </wpt>
 <wpt lat="35.902759000" lon="-106.365698000">
   <ele></ele>
