@@ -40,7 +40,7 @@ GpxTreeWidget::GpxTreeWidget(GpxFile *gpx) : _gpx(gpx) {
     for (int i=0; i<6; ++i) {
         header()->setResizeMode(i, QHeaderView::Stretch);
     }
-    setSelectionMode(QAbstractItemView::ContiguousSelection);
+    setSelectionMode(QAbstractItemView::ExtendedSelection);
 
     contextMenu = new QMenu(tr("Track Menu"));
     mergeAction = new QAction(this);
@@ -71,27 +71,12 @@ void GpxTreeWidget::buildTree() {
 
     if (_gpx==0) return;
 
-    QTreeWidgetItem *gpxfile = new QTreeWidgetItem(this);
-    
-    gpxfile->setText(0, tr("GpxFile"));
-    gpxfile->setText(2, tr("%1").arg(meter2mile(_gpx->length())));
-    gpxfile->setText(3, tr("%1").arg(_gpx->pointCount()));
-    gpxfile->setText(4, tr("%1").arg(formatDuration(_gpx->duration(), true)));
-    gpxfile->setText(5, tr("%1").arg(meterPerSecond2MilePerHour(_gpx->maxSpeed())));
-    gpxfile->setText(6, tr("%1").arg(meterPerSecond2MilePerHour(_gpx->averageSpeed())));
-
+    root = new QTreeWidgetItem(this);
     for (int i=0; i<_gpx->segmentCount(); ++i) {
-        QTreeWidgetItem *track = new QTreeWidgetItem(gpxfile);
-        GpxTrackSegment cur = (*_gpx)[i];
-        track->setText(0, tr("Track %1").arg(cur.number()));
-
-        track->setText(1, tr("%1").arg(cur.name()));
-        track->setText(2, tr("%1").arg(meter2mile(cur.length())));
-        track->setText(3, tr("%1").arg(cur.pointCount()));
-        track->setText(4, tr("%1").arg(formatDuration(cur.duration(), true)));
-        track->setText(5, tr("%1").arg(meterPerSecond2MilePerHour(cur.maxSpeed())));
-        track->setText(6, tr("%1").arg(meterPerSecond2MilePerHour(cur.averageSpeed())));
+        new QTreeWidgetItem(root);
     }
+    expandItem(root);
+    recompute();
     removeAction->setEnabled(true);
     mergeAction->setEnabled(true);
 }
@@ -108,25 +93,61 @@ void GpxTreeWidget::contextMenuEvent(QContextMenuEvent *event) {
 }
 
 void GpxTreeWidget::mergeTracks() {
+    if (_gpx==0) return;
+    QList<QTreeWidgetItem*> tracks = selectedItems();
+    tracks.removeAll(root);
+    if (tracks.size()==0) return;
+    QList<QString> toMerge;
+
+    toMerge.push_back(tracks[0]->text(1));
+    for (int i=1; i<tracks.size(); ++i) {
+        toMerge.push_back(tracks[i]->text(1));
+        delete tracks[i];
+    }
+    _gpx->mergeTracksByName(toMerge);
+    recompute();
 }
 
 void GpxTreeWidget::removeTracks() {
     if (_gpx==0) return;
     QList<QTreeWidgetItem*> tracks = selectedItems();
+    tracks.removeAll(root);
+    if (tracks.size()==0) return;
 
     QList<QString> toRemove;
 
-    QRegExp trackRE("Track ([0-9]+)");
     for (int i=0; i<tracks.size(); ++i) {
         toRemove.push_back(tracks[i]->text(1));
         delete tracks[i];
     }
-
-    for (int i=0; i<toRemove.size(); ++i) {
-        _gpx->removeTrackByName(toRemove[i]);
-    }
+    _gpx->removeTracksByName(toRemove);
+    recompute();
 }
 
 void GpxTreeWidget::recompute() {
+    if (root) {
+        root->setText(0, tr("GpxFile"));
+        root->setText(2, tr("%1").arg(meter2mile(_gpx->length())));
+        root->setText(3, tr("%1").arg(_gpx->pointCount()));
+        root->setText(4, tr("%1").arg(formatDuration(_gpx->duration(), true)));
+        root->setText(5, tr("%1").arg(meterPerSecond2MilePerHour(_gpx->maxSpeed())));
+        root->setText(6, tr("%1").arg(meterPerSecond2MilePerHour(_gpx->averageSpeed())));
+
+        QTreeWidgetItem *track = root;
+        
+        for (int i=0; i<_gpx->segmentCount(); ++i) {
+            track = itemBelow(track);
+            if (track == 0) return;
+            GpxTrackSegment cur = (*_gpx)[i];
+            track->setText(0, tr("Track %1").arg(cur.number()));
+
+            track->setText(1, tr("%1").arg(cur.name()));
+            track->setText(2, tr("%1").arg(meter2mile(cur.length())));
+            track->setText(3, tr("%1").arg(cur.pointCount()));
+            track->setText(4, tr("%1").arg(formatDuration(cur.duration(), true)));
+            track->setText(5, tr("%1").arg(meterPerSecond2MilePerHour(cur.maxSpeed())));
+            track->setText(6, tr("%1").arg(meterPerSecond2MilePerHour(cur.averageSpeed())));
+        }
+    }
     
 }

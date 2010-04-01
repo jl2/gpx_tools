@@ -134,3 +134,7 @@ void GpxTrackSegment::boundUTM(double &minX, double &minY, double &minEle,
         if (track_pts[i].elevation() > maxEle) maxEle = track_pts[i].elevation();
     }
 }
+
+void GpxTrackSegment::merge(const GpxTrackSegment &other) {
+    track_pts.append(other.track_pts);
+}

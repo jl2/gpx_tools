@@ -73,6 +73,25 @@ void testFuncCallOp() {
     qDebug() << "GpxFile::operator() tests passed";
 }
 
+void testMerge() {
+    qDebug() << "Testing track merge";
+
+    QStringList tom = QStringList() << "ACTIVE LOG #2" << "ACTIVE LOG #3" << "ACTIVE LOG #4";
+    GpxFile gpx("data/test2.gpx");
+    assert(gpx.segmentCount() == 3);
+    assert(gpx[0].name() == "ACTIVE LOG #2");
+    assert(gpx[1].name() == "ACTIVE LOG #3");
+    int ptCount = gpx.pointCount();
+
+    gpx.mergeTracksByName(tom);
+    assert(gpx.segmentCount() == 1);
+    assert(gpx[0].name() == "ACTIVE LOG #2");
+    assert(gpx.pointCount() == ptCount);
+    qDebug() << "Track merge tests passed";
+    QString tmp;
+    gpx.toXml(tmp);
+    qDebug() << tmp;
+}
 
 int main() {
 
@@ -97,6 +116,8 @@ int main() {
     testBounds();
 
     testFuncCallOp();
+
+    testMerge();
 
     qDebug() << "All tests passed.";
     return 0;

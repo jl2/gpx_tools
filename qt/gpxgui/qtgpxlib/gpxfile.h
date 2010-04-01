@@ -61,6 +61,9 @@ public:
     void removeTrack(int idx);
     void removeTrackByName(QString name);
 
+    void removeTracksByName(QStringList names);
+    void mergeTracksByName(QStringList names);
+
     void boundLatLon(double &minLat, double &minLon, double &minEle,
                      double &maxLat, double &maxLon, double &maxEle);
 

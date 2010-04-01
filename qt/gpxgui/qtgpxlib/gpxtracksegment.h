@@ -56,6 +56,8 @@ public:
     void boundUTM(double &minX, double &minY, double &minEle,
                   double &maxX, double &maxY, double &maxEle);
 
+    void merge(const GpxTrackSegment &other);
+
 private:
     QString _name;
 

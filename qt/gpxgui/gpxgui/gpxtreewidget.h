@@ -25,6 +25,8 @@ class GpxFile;
 class QMenu;
 class QAction;
 
+class QTreeWidgetItem;
+
 class GpxTreeWidget : public QTreeWidget {
     Q_OBJECT;
 
@@ -46,6 +48,9 @@ private:
 
     void buildTree();
     void recompute();
+
+    QTreeWidgetItem *root;
+    QTreeWidgetItem *children;
 };
 
 #endif

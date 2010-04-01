@@ -74,6 +74,7 @@ GpxPoint& GpxFile::operator()(int n) {
         }
     }
     assert(nn==0);
+    return track_segments[0][0];
 }
 
 void GpxFile::addTrack(const GpxTrackSegment &seg) {
@@ -206,6 +207,33 @@ void GpxFile::removeTrackByName(QString name) {
         if (track_segments[i].name() == name) {
             track_segments.removeAt(i);
             return;
+        }
+    }
+}
+
+void GpxFile::removeTracksByName(QStringList names) {
+    for (int i=0; i<names.size(); ++i) {
+        removeTrackByName(names[i]);
+    }
+}
+
+void GpxFile::mergeTracksByName(QStringList names) {
+    assert(names.size()>0 && track_segments.size()>0);
+    
+    int mergingTo = -1;
+    for (int i=0; i<track_segments.size(); ++i) {
+        if (track_segments[i].name() == names[0]) {
+            mergingTo = i;
+            break;
+        }
+    }
+    for (int i=1; i<names.size(); ++i) {
+        for (int j=0; j<track_segments.size(); ++j) {
+            if (names[i] == track_segments[j].name()) {
+                track_segments[mergingTo].merge(track_segments[j]);
+                track_segments.removeAt(j);
+                break;
+            }
         }
     }
 }
