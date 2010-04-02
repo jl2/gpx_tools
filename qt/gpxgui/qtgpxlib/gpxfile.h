@@ -32,6 +32,7 @@
 
 class GpxFile : public GpxElement, public Track {
 public:
+    GpxFile(GpxTrackSegment &seg);
     GpxFile(QString fname, bool purgeEmpty = true);
     
     void toXml(QString &xmlStr);
@@ -70,6 +71,7 @@ public:
     void boundUTM(double &minX, double &minY, double &minEle,
                   double &maxX, double &maxY, double &maxEle);
 
+    GpxTrackSegment segmentByName(QString name);
 private:
     QList<GpxTrackSegment> track_segments;
     QDateTime _time;

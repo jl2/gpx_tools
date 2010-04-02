@@ -36,15 +36,18 @@ public:
 public slots:
     void mergeTracks();
     void removeTracks();
+    void splitTrack();
     protected:
     void contextMenuEvent(QContextMenuEvent *event);
 
 private:
     GpxFile *_gpx;
-    QMenu *contextMenu;
+    QMenu *multiContextMenu;
+    QMenu *singleContextMenu;
 
     QAction *mergeAction;
     QAction *removeAction;
+    QAction *splitAction;
 
     void buildTree();
     void recompute();

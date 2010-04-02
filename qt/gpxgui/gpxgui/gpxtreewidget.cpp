@@ -15,6 +15,7 @@
 // OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 #include <QtGui>
+#include <cassert>
 
 #include "gpxtreewidget.h"
 
@@ -42,21 +43,34 @@ GpxTreeWidget::GpxTreeWidget(GpxFile *gpx) : _gpx(gpx) {
     }
     setSelectionMode(QAbstractItemView::ExtendedSelection);
 
-    contextMenu = new QMenu(tr("Track Menu"));
+
     mergeAction = new QAction(this);
     mergeAction->setText(tr("Merge"));
     mergeAction->setToolTip(tr("Merge the selected tracks into one."));
     mergeAction->setDisabled(true);
-    contextMenu->addAction(mergeAction);
 
     removeAction = new QAction(this);
     removeAction->setText(tr("Remove"));
     removeAction->setToolTip(tr("Remove the selected tracks."));
     removeAction->setDisabled(true);
-    contextMenu->addAction(removeAction);
+
+    splitAction = new QAction(this);
+    splitAction->setText(tr("Split"));
+    splitAction->setToolTip(tr("Split selected track into seperate file."));
+    splitAction->setDisabled(true);
+
+    multiContextMenu = new QMenu(tr("Multi-selection Track Menu"));
+    multiContextMenu->addAction(mergeAction);
+    multiContextMenu->addAction(removeAction);
+    
+    singleContextMenu = new QMenu(tr("Single selection Track Menu"));
+    singleContextMenu->addAction(splitAction);
+    singleContextMenu->addAction(removeAction);
 
     connect(mergeAction, SIGNAL(triggered()), this, SLOT(mergeTracks()));
     connect(removeAction, SIGNAL(triggered()), this, SLOT(removeTracks()));
+    connect(splitAction, SIGNAL(triggered()), this, SLOT(splitTrack()));
+
     if (_gpx) {
         buildTree();
     }
@@ -68,6 +82,7 @@ void GpxTreeWidget::buildTree() {
 
     removeAction->setEnabled(false);
     mergeAction->setEnabled(false);
+    splitAction->setEnabled(false);
 
     if (_gpx==0) return;
 
@@ -79,6 +94,7 @@ void GpxTreeWidget::buildTree() {
     recompute();
     removeAction->setEnabled(true);
     mergeAction->setEnabled(true);
+    splitAction->setEnabled(true);
 }
 
 void GpxTreeWidget::setGpxFile(GpxFile *gpx) {
@@ -88,12 +104,17 @@ void GpxTreeWidget::setGpxFile(GpxFile *gpx) {
 
 void GpxTreeWidget::contextMenuEvent(QContextMenuEvent *event) {
     if (_gpx) {
-        contextMenu->popup(mapToGlobal(event->pos()));
+        if (selectedItems().size()==1) {
+            singleContextMenu->popup(mapToGlobal(event->pos()));
+        } else {
+            multiContextMenu->popup(mapToGlobal(event->pos()));
+        }
     }
 }
 
 void GpxTreeWidget::mergeTracks() {
-    if (_gpx==0) return;
+    assert(_gpx!=0);
+
     QList<QTreeWidgetItem*> tracks = selectedItems();
     tracks.removeAll(root);
     if (tracks.size()==0) return;
@@ -109,7 +130,7 @@ void GpxTreeWidget::mergeTracks() {
 }
 
 void GpxTreeWidget::removeTracks() {
-    if (_gpx==0) return;
+    assert(_gpx!=0);
     QList<QTreeWidgetItem*> tracks = selectedItems();
     tracks.removeAll(root);
     if (tracks.size()==0) return;
@@ -122,6 +143,32 @@ void GpxTreeWidget::removeTracks() {
     }
     _gpx->removeTracksByName(toRemove);
     recompute();
+}
+
+void GpxTreeWidget::splitTrack() {
+    assert(_gpx!=0);
+    assert(selectedItems().size()==1);
+    
+    QList<QTreeWidgetItem*> tracks = selectedItems();
+    tracks.removeAll(root);
+    if (tracks.size()==0) return;
+
+    QString newFileName = QFileDialog::getSaveFileName(this,
+                                                       tr("Choose a file to save to"),
+                                                       tr("."),
+                                                       tr("GPX Files (*.gpx)"));
+    if (newFileName == tr("")) return;
+    GpxTrackSegment s = _gpx->segmentByName(selectedItems()[0]->text(1));
+    GpxFile *newGpx = new GpxFile(s);
+    QString strValue;
+    newGpx->toXml(strValue);
+
+    QFile file( newFileName );
+    if (file.open(QIODevice::WriteOnly)) {
+        QTextStream out(&file);
+        out << strValue;
+    }
+    delete newGpx;
 }
 
 void GpxTreeWidget::recompute() {

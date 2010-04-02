@@ -18,6 +18,14 @@
 
 #include <cassert>
 
+GpxFile::GpxFile(GpxTrackSegment &seg) {
+    track_segments.push_back(seg);
+    if (seg.pointCount()>0) {
+        _time = seg[0].time();
+    }
+    track_segments[0].setNumber(1);
+}
+
 GpxFile::GpxFile(QString fname, bool purgeEmpty) : _time(QDateTime()) {
     readFile(fname, purgeEmpty);
 }
@@ -236,4 +244,13 @@ void GpxFile::mergeTracksByName(QStringList names) {
             }
         }
     }
+}
+
+GpxTrackSegment GpxFile::segmentByName(QString name) {
+    for (int i=0; i<track_segments.size(); ++i) {
+        if (track_segments[i].name() == name) {
+            return track_segments[i];
+        }
+    }
+    return GpxTrackSegment();
 }
