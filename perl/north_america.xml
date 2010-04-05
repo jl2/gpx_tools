@@ -481,214 +481,184 @@
   <url>http://www.windhammountain.com</url>
 </wpt>
 <wpt lat="43.295169000" lon="-73.728573000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>460</ele>
+  <vertical>1010</vertical>
   <name>West Mountain</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>22</numruns>
+  <numlifts>8</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.skiwestmountain.com</url>
 </wpt>
 <wpt lat="42.716744000" lon="-77.396540000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>900</ele>
+  <vertical>1200</vertical>
   <name>Bristol Mountain</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>33</numruns>
+  <numlifts>5</numlifts>
+  <snow>130</snow>
+  <longestrun>2</longestrun>
+  <url>http://www.roselandwaterpark.com</url>
 </wpt>
 <wpt lat="42.274299000" lon="-79.168569000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>1669</ele>
+  <vertical>-1</vertical>
   <name>Cockaigne</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>18</numruns>
+  <numlifts>4</numlifts>
+  <snow>275</snow>
+  <longestrun>.68</longestrun>
+  <url>http://www.cockaigne.com</url>
 </wpt>
 <wpt lat="43.921629000" lon="-75.898463000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Dry Hill</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>7</numruns>
+  <numlifts>-1</numlifts>
+  <snow>-2</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.skidryhill.com</url>
 </wpt>
 <wpt lat="42.503753000" lon="-76.146073000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>952</vertical>
   <name>Greek Peak</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>32</numruns>
+  <numlifts>9</numlifts>
+  <snow>122</snow>
+  <longestrun>1.5</longestrun>
+  <url>http://www.greekpeak.net</url>
 </wpt>
 <wpt lat="41.625413000" lon="-74.608840000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Holiday Mt.</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>9</numruns>
+  <numlifts>-1</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.holidaymtn.com</url>
 </wpt>
 <wpt lat="42.257197000" lon="-78.656413000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Holiday Valley</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>-1</numruns>
+  <numlifts>9</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.holidayvalley.com</url>
 </wpt>
 <wpt lat="42.613320000" lon="-77.395041000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Hunt Hollow</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>21</numruns>
+  <numlifts>3</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.hunthollow.com</url>
 </wpt>
 <wpt lat="42.623251000" lon="-78.671484000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Kissing Bridge</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>-1</numruns>
+  <numlifts>8</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.kbski.com</url>
 </wpt>
 <wpt lat="42.771347000" lon="-76.038071000">
-  <ele></ele>
-  <vertical></vertical>
-  <name>Laborador Mt.</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
-</wpt>
-<wpt lat="43.691907000" lon="-74.996534000">
-  <ele></ele>
-  <vertical></vertical>
-  <name>McCauley Mt (loc approx)</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <ele>1125</ele>
+  <vertical>700</vertical>
+  <name>Labrador Mt.</name>
+  <numruns>22</numruns>
+  <numlifts>3</numlifts>
+  <snow>125</snow>
+  <longestrun>1</longestrun>
+  <url>http://labradormtn.com</url>
 </wpt>
 <wpt lat="41.242628000" lon="-74.299191000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Mt. Peter</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>12</numruns>
+  <numlifts>4</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.mtpeter.com</url>
 </wpt>
 <wpt lat="42.063363000" lon="-79.739092000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>1400</ele>
+  <vertical>400</vertical>
   <name>Peek&apos;n Peak</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
-</wpt>
-<wpt lat="42.214959000" lon="-74.740883000">
-  <ele></ele>
-  <vertical></vertical>
-  <name>Ski Bobcat</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>27</numruns>
+  <numlifts>9</numlifts>
+  <snow>-1</snow>
+  <longestrun>.77</longestrun>
+  <url>http://www.pknpk.com</url>
 </wpt>
 <wpt lat="42.682561000" lon="-78.688946000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>4900</ele>
+  <vertical>2800</vertical>
   <name>Ski Tamarack</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>41</numruns>
+  <numlifts>7</numlifts>
+  <snow>300</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.tamarackidaho.com</url>
 </wpt>
 <wpt lat="43.623787000" lon="-75.411628000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>1500</ele>
+  <vertical>500</vertical>
   <name>Snow Ridge (loc approx)</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>22</numruns>
+  <numlifts>6</numlifts>
+  <snow>230</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.snowridge.com</url>
 </wpt>
 <wpt lat="42.775953000" lon="-76.170266000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Song Mountain</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
-</wpt>
-<wpt lat="41.238499000" lon="-74.205546000">
-  <ele></ele>
-  <vertical></vertical>
-  <name>Sterling Forest</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>24</numruns>
+  <numlifts>5</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.songmountain.com</url>
 </wpt>
 <wpt lat="42.477516000" lon="-77.848207000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>1320</ele>
+  <vertical>650</vertical>
   <name>Swain (loc approx)</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>30</numruns>
+  <numlifts>5</numlifts>
+  <snow>130</snow>
+  <longestrun>1</longestrun>
+  <url>http://www.swain.com</url>
 </wpt>
 <wpt lat="41.517390000" lon="-73.586679000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>200</vertical>
   <name>Thunder Ridge</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>30</numruns>
+  <numlifts>6</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://thunderridgeski.com</url>
 </wpt>
 <wpt lat="44.728456000" lon="-74.191223000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Titus Mt. (loc approx)</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>26</numruns>
+  <numlifts>7</numlifts>
+  <snow>130</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.titusmountain.com</url>
 </wpt>
 <wpt lat="44.353864000" lon="-73.861486000">
   <ele></ele>
