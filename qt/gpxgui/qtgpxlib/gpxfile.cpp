@@ -67,12 +67,15 @@ double GpxFile::maxSpeed() {
     return maxs;
 }
 
-GpxTrackSegment& GpxFile::operator[](int n) {
+GpxTrackSegment& GpxFile::track(int n) {
     assert(n< track_segments.size());
     return track_segments[n];
 }
+GpxTrackSegment& GpxFile::operator[](int n) {
+    return track(n);
+}
 
-GpxPoint& GpxFile::operator()(int n) {
+GpxPoint& GpxFile::point(int n) {
     int nn = n;
     for (int i=0; i<track_segments.size(); ++i) {
         if (track_segments[i].pointCount()>nn) {
@@ -83,6 +86,9 @@ GpxPoint& GpxFile::operator()(int n) {
     }
     assert(nn==0);
     return track_segments[0][0];
+}
+GpxPoint& GpxFile::operator()(int n) {
+    return point(n);
 }
 
 void GpxFile::addTrack(const GpxTrackSegment &seg) {

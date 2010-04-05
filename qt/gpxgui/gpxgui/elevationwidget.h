@@ -1,6 +1,6 @@
-// gpxtreewidget.h
+// elevationwidget.h
 
-// Copyright (c) 2010, Jeremiah LaRocco jlarocco@jlarocco.com
+// Copyright (c) 2010, Jeremiah LaRocco jeremiah.larocco@gmail.com
 
 // Permission to use, copy, modify, and/or distribute this software for any
 // purpose with or without fee is hereby granted, provided that the above
@@ -14,50 +14,26 @@
 // ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 // OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-#ifndef GPX_TREE_WIDGET_H
-#define GPX_TREE_WIDGET_H
-
+#include <QtGui>
 #include <QWidget>
 
-#include <QTreeWidget>
+#include "gpxtab.h"
 
-class GpxFile;
-class QMenu;
-class QAction;
-
-class QTreeWidgetItem;
-
-class GpxTreeWidget : public QTreeWidget {
+class ElevationWidget : public GpxTab {
     Q_OBJECT;
-
 public:
-    GpxTreeWidget(GpxFile *gpx = 0);
-    void setGpxFile(GpxFile *gpx);
-public slots:
-    void mergeTracks();
-    void removeTracks();
-    void splitTrack();
+    ElevationWidget(QWidget *parent = 0);
+    ~ElevationWidget();
+    void setGpx(GpxFile *gpx);
 
-       signals:
+public slots:
     void gpxChanged();
 
 protected:
-    void contextMenuEvent(QContextMenuEvent *event);
+    void paintEvent(QPaintEvent *event);
+    void resizeEvent(QResizeEvent *event);
 
 private:
     GpxFile *_gpx;
-    QMenu *multiContextMenu;
-    QMenu *singleContextMenu;
-
-    QAction *mergeAction;
-    QAction *removeAction;
-    QAction *splitAction;
-
-    void buildTree();
-    void recompute();
-
-    QTreeWidgetItem *root;
-    QTreeWidgetItem *children;
+    QList<QColor> colors;
 };
-
-#endif

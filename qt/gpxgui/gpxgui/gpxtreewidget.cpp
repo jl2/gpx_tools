@@ -29,11 +29,11 @@ GpxTreeWidget::GpxTreeWidget(GpxFile *gpx) : _gpx(gpx) {
     QStringList columns = QStringList()
         << tr("Track #")
         << tr("Name")
-        << tr("Length (miles)")
+        << tr("Length\n(miles)")
         << tr("# Pts")
         << tr("Duration")
-        << tr("Max Speed (mph)")
-        << tr("Avg. Speed (mph)");
+        << tr("Max Speed\n(mph)")
+        << tr("Avg. Speed\n(mph)");
 
     setColumnCount(columns.size());
     
@@ -127,12 +127,14 @@ void GpxTreeWidget::mergeTracks() {
     }
     _gpx->mergeTracksByName(toMerge);
     recompute();
+    emit gpxChanged();
 }
 
 void GpxTreeWidget::removeTracks() {
     assert(_gpx!=0);
     QList<QTreeWidgetItem*> tracks = selectedItems();
     tracks.removeAll(root);
+    if (_gpx->segmentCount()==1) return;
     if (tracks.size()==0) return;
 
     QList<QString> toRemove;
@@ -143,6 +145,7 @@ void GpxTreeWidget::removeTracks() {
     }
     _gpx->removeTracksByName(toRemove);
     recompute();
+    emit gpxChanged();
 }
 
 void GpxTreeWidget::splitTrack() {
@@ -174,11 +177,11 @@ void GpxTreeWidget::splitTrack() {
 void GpxTreeWidget::recompute() {
     if (root) {
         root->setText(0, tr("GpxFile"));
-        root->setText(2, tr("%1").arg(meter2mile(_gpx->length())));
+        root->setText(2, tr("%1").arg(meter2mile(_gpx->length()), 2,'f',2));
         root->setText(3, tr("%1").arg(_gpx->pointCount()));
         root->setText(4, tr("%1").arg(formatDuration(_gpx->duration(), true)));
-        root->setText(5, tr("%1").arg(meterPerSecond2MilePerHour(_gpx->maxSpeed())));
-        root->setText(6, tr("%1").arg(meterPerSecond2MilePerHour(_gpx->averageSpeed())));
+        root->setText(5, tr("%1").arg(meterPerSecond2MilePerHour(_gpx->maxSpeed()), 2,'f',2));
+        root->setText(6, tr("%1").arg(meterPerSecond2MilePerHour(_gpx->averageSpeed()), 2,'f',2));
 
         QTreeWidgetItem *track = root;
         
@@ -189,11 +192,11 @@ void GpxTreeWidget::recompute() {
             track->setText(0, tr("Track %1").arg(cur.number()));
 
             track->setText(1, tr("%1").arg(cur.name()));
-            track->setText(2, tr("%1").arg(meter2mile(cur.length())));
+            track->setText(2, tr("%1").arg(meter2mile(cur.length()), 2, 'f', 2));
             track->setText(3, tr("%1").arg(cur.pointCount()));
             track->setText(4, tr("%1").arg(formatDuration(cur.duration(), true)));
-            track->setText(5, tr("%1").arg(meterPerSecond2MilePerHour(cur.maxSpeed())));
-            track->setText(6, tr("%1").arg(meterPerSecond2MilePerHour(cur.averageSpeed())));
+            track->setText(5, tr("%1").arg(meterPerSecond2MilePerHour(cur.maxSpeed()), 2,'f',2));
+            track->setText(6, tr("%1").arg(meterPerSecond2MilePerHour(cur.averageSpeed()), 2,'f',2));
         }
     }
     

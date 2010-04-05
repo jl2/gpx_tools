@@ -10,10 +10,10 @@ LIBS += -lGeographic -lqtgpxlib
 QMAKE_LFLAGS += -L../qtgpxlib
 
 # Input
-HEADERS += gpxgui.h gpxtreewidget.h unitconversion.h
+HEADERS += gpxgui.h gpxtreewidget.h unitconversion.h gpxtab.h elevationwidget.h utils.h
 
 SOURCES += main.cpp \
-           gpxgui.cpp gpxtreewidget.cpp unitconversion.cpp
+           gpxgui.cpp gpxtreewidget.cpp unitconversion.cpp gpxtab.cpp elevationwidget.cpp utils.cpp
 
 RESOURCES += gpxgui.qrc
 

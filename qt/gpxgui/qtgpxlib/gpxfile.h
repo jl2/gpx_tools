@@ -42,8 +42,10 @@ public:
     double maxSpeed();
 
     GpxTrackSegment& operator[](int n);
+    GpxTrackSegment& track(int n);
 
     GpxPoint &operator()(int n);
+    GpxPoint &point(int n);
 
     void addTrack(const GpxTrackSegment &seg);
     void addPoint(const GpxPoint &pt, int track=-1);

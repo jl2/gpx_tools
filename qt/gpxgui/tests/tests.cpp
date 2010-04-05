@@ -118,7 +118,6 @@ int main() {
     testFuncCallOp();
 
     testMerge();
-
     qDebug() << "All tests passed.";
     return 0;
 }

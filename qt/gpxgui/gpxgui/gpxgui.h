@@ -27,8 +27,9 @@ class QSplitter;
 
 
 class GpxTreeWidget;
-
+class QSvgWidget;
 class GpxFile;
+class ElevationWidget;
 
 class GpxGui : public QMainWindow {
     Q_OBJECT;
@@ -98,8 +99,10 @@ private:
 
     GpxFile *gpx;
 
-    GpxTreeWidget *gpxw;
-    
+    GpxTreeWidget *gpxTree;
+
+    QTabWidget *visTabs;
+    ElevationWidget *eleW;
 };
 
 #endif

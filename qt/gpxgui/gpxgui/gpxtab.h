@@ -1,6 +1,6 @@
-// gpxtreewidget.h
+// gpxtab.h
 
-// Copyright (c) 2010, Jeremiah LaRocco jlarocco@jlarocco.com
+// Copyright (c) 2010, Jeremiah LaRocco jeremiah.larocco@gmail.com
 
 // Permission to use, copy, modify, and/or distribute this software for any
 // purpose with or without fee is hereby granted, provided that the above
@@ -14,50 +14,17 @@
 // ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 // OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-#ifndef GPX_TREE_WIDGET_H
-#define GPX_TREE_WIDGET_H
-
+#include <QtGui>
 #include <QWidget>
 
-#include <QTreeWidget>
+#include "gpxfile.h"
 
-class GpxFile;
-class QMenu;
-class QAction;
-
-class QTreeWidgetItem;
-
-class GpxTreeWidget : public QTreeWidget {
+class GpxTab : public QWidget {
     Q_OBJECT;
-
 public:
-    GpxTreeWidget(GpxFile *gpx = 0);
-    void setGpxFile(GpxFile *gpx);
+    GpxTab(QWidget *parent = 0);
+    ~GpxTab();
+    virtual void setGpx(GpxFile *gpx) = 0;
 public slots:
-    void mergeTracks();
-    void removeTracks();
-    void splitTrack();
-
-       signals:
     void gpxChanged();
-
-protected:
-    void contextMenuEvent(QContextMenuEvent *event);
-
-private:
-    GpxFile *_gpx;
-    QMenu *multiContextMenu;
-    QMenu *singleContextMenu;
-
-    QAction *mergeAction;
-    QAction *removeAction;
-    QAction *splitAction;
-
-    void buildTree();
-    void recompute();
-
-    QTreeWidgetItem *root;
-    QTreeWidgetItem *children;
 };
-
-#endif

@@ -15,13 +15,17 @@
 // OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 #include <QtGui>
+
 #include <stdexcept>
 #include "gpxgui.h"
 #include "gpxtreewidget.h"
 #include "gpxfile.h"
 
+#include "elevationwidget.h"
+
 void GpxGui::readSettings() {
 }
+
 GpxGui::GpxGui(QWidget *parent) : QMainWindow(parent), gpx(0) {
     readSettings();
     setupActions();
@@ -33,9 +37,16 @@ GpxGui::GpxGui(QWidget *parent) : QMainWindow(parent), gpx(0) {
     setWindowTitle(titleBarPrefix);
 
     split = new QSplitter;
-    gpxw = new GpxTreeWidget;
-    split->addWidget(gpxw);
-    split->addWidget(new QLabel("Visualization widget goes here..."));
+    gpxTree = new GpxTreeWidget;
+    visTabs = new QTabWidget;
+    eleW = new ElevationWidget;
+    visTabs->insertTab(0, eleW, tr("Elevation Profile"));
+
+    split->addWidget(gpxTree);
+    split->addWidget(visTabs);
+    connect(gpxTree, SIGNAL(gpxChanged()),
+            eleW, SLOT(gpxChanged()));
+    // split->addWidget(new QLabel("Visualization widget goes here..."));
     setCentralWidget(split);
 }
 
@@ -163,10 +174,14 @@ void GpxGui::openFile() {
 
     gpx = new GpxFile(newFileName, true);
     curFileName = newFileName;
-    
+
+    ((GpxTab*)visTabs->currentWidget())->setGpx(gpx);
+
     enableActionsOnOpen();
-    gpxw->setGpxFile(gpx);
+
+    gpxTree->setGpxFile(gpx);
 }
+
 void GpxGui::updateUI() {
   curFileNameLbl->setText(curFileName);
   curDistanceLbl->setText(tr("%1 meters").arg(gpx->length()));
@@ -204,7 +219,8 @@ void GpxGui::closeFile() {
 
     if (gpx) delete gpx;
     gpx = 0;
-    gpxw->setGpxFile(gpx);
+    gpxTree->setGpxFile(gpx);
+    ((GpxTab*)visTabs->currentWidget())->setGpx(gpx);
 }
 
 void GpxGui::about() {
