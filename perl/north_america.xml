@@ -661,194 +661,194 @@
   <url>http://www.titusmountain.com</url>
 </wpt>
 <wpt lat="44.353864000" lon="-73.861486000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>1220</ele>
+  <vertical>3430</vertical>
   <name>Whiteface Mountain</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>85</numruns>
+  <numlifts>11</numlifts>
+  <snow>230</snow>
+  <longestrun>2.1</longestrun>
+  <url>http://www.whiteface.com</url>
 </wpt>
 <wpt lat="41.082280000" lon="-75.214736000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Alpine Mountain</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>21</numruns>
+  <numlifts>3</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.alpinemountain.com</url>
 </wpt>
 <wpt lat="40.479015000" lon="-75.621481000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>590</ele>
+  <vertical>510</vertical>
   <name>Bear Creek</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>21</numruns>
+  <numlifts>7</numlifts>
+  <snow>30</snow>
+  <longestrun>.9</longestrun>
+  <url>http://bcmountainresort.com</url>
 </wpt>
 <wpt lat="41.042182000" lon="-75.588624000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Big Boulder</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>5</numruns>
+  <numlifts>8</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.jfbb.com</url>
 </wpt>
 <wpt lat="41.089190000" lon="-75.634258000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Jack Frost (loc approx)</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>20</numruns>
+  <numlifts>9</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.jfbb.com</url>
 </wpt>
 <wpt lat="40.287289000" lon="-78.558084000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>1072</vertical>
   <name>Blue Knob</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>34</numruns>
+  <numlifts>4</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.blueknob.com</url>
 </wpt>
 <wpt lat="40.421804000" lon="-76.114741000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>280</ele>
+  <vertical>300</vertical>
   <name>Blue Marsh</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>11</numruns>
+  <numlifts>5</numlifts>
+  <snow>12</snow>
+  <longestrun>-1</longestrun>
+  <url>-1</url>
 </wpt>
 <wpt lat="40.810505000" lon="-75.530941000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>458</ele>
+  <vertical>1082</vertical>
   <name>Blue Mountain</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>33</numruns>
+  <numlifts>9</numlifts>
+  <snow>30</snow>
+  <longestrun>1.21</longestrun>
+  <url>http://www.skibluemt.com</url>
 </wpt>
 <wpt lat="41.056714000" lon="-75.347831000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>1333</ele>
+  <vertical>800</vertical>
   <name>Camelback</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>33</numruns>
+  <numlifts>15</numlifts>
+  <snow>50</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.skicamelback.com</url>
 </wpt>
 <wpt lat="40.925858000" lon="-76.060302000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Eagle Rock (loc approx)</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>16</numruns>
+  <numlifts>-1</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.eaglerockresort.com/Leisure/Snow-Sports.aspx</url>
 </wpt>
 <wpt lat="41.726611000" lon="-75.570283000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Elk Mountain</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>27</numruns>
+  <numlifts>7</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.elkskier.com</url>
 </wpt>
 <wpt lat="40.063782000" lon="-79.249820000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>310</vertical>
   <name>Hidden Valley</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>15</numruns>
+  <numlifts>6</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.hiddenvalleyski.com</url>
 </wpt>
 <wpt lat="40.160347000" lon="-79.149952000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Laurel Mountain</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>-1</numruns>
+  <numlifts>-1</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.skilaurelmountain.com</url>
 </wpt>
 <wpt lat="39.777535000" lon="-77.373451000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>570</ele>
+  <vertical>620</vertical>
   <name>Liberty Mountain Resort</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>16</numruns>
+  <numlifts>9</numlifts>
+  <snow>31</snow>
+  <longestrun>.98</longestrun>
+  <url>http://www.skiliberty.com</url>
 </wpt>
 <wpt lat="41.350785000" lon="-75.666842000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Montage Mountain</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>25</numruns>
+  <numlifts>7</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.snomtn.com</url>
 </wpt>
 <wpt lat="41.848357000" lon="-75.303253000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Mt. Tone</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>-1</numruns>
+  <numlifts>-1</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>-1</url>
 </wpt>
 <wpt lat="39.801526000" lon="-79.554038000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Mystic Mt at Nemacolin Woodlands</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>-1</numruns>
+  <numlifts>-1</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://skimystic.com</url>
 </wpt>
 <wpt lat="40.022349000" lon="-79.299730000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>2240</ele>
+  <vertical>701</vertical>
   <name>Seven Springs</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>40</numruns>
+  <numlifts>15</numlifts>
+  <snow>105</snow>
+  <longestrun>1.3</longestrun>
+  <url>http://www.7springs.com</url>
 </wpt>
 <wpt lat="41.029881000" lon="-75.108904000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>651</ele>
+  <vertical>700</vertical>
   <name>Shawnee Mt (loc approx)</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>23</numruns>
+  <numlifts>9</numlifts>
+  <snow>-1</snow>
+  <longestrun>1.96</longestrun>
+  <url>http://www.shawneemt.com</url>
 </wpt>
 <wpt lat="41.504630000" lon="-74.994671000">
   <ele></ele>
