@@ -851,124 +851,114 @@
   <url>http://www.shawneemt.com</url>
 </wpt>
 <wpt lat="41.504630000" lon="-74.994671000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Ski Big Bear at Masthope Mt.</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>18</numruns>
+  <numlifts>6</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.ski-bigbear.com</url>
 </wpt>
 <wpt lat="41.770233000" lon="-77.836152000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>1850</ele>
+  <vertical>650</vertical>
   <name>Ski Denton</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>22</numruns>
+  <numlifts>4</numlifts>
+  <snow>80</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.skidenton.com</url>
 </wpt>
 <wpt lat="40.099146000" lon="-76.908940000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>600</vertical>
   <name>Ski Roundtop</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>16</numruns>
+  <numlifts>10</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.skiroundtop.com</url>
 </wpt>
 <wpt lat="41.521354000" lon="-77.289623000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Ski Sawmill</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
-</wpt>
-<wpt lat="41.084401000" lon="-75.694189000">
-  <ele></ele>
-  <vertical></vertical>
-  <name>Split Rock Resort</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>13</numruns>
+  <numlifts>4</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.skisawmill.com</url>
 </wpt>
 <wpt lat="40.298057000" lon="-75.416247000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Spring Mountain</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>9</numruns>
+  <numlifts>6</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://springmountainadventures.com</url>
 </wpt>
 <wpt lat="40.775667000" lon="-77.757601000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>1319</ele>
+  <vertical>500</vertical>
   <name>Tussey Mountain</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>7</numruns>
+  <numlifts>4</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.tusseymountain.com</url>
 </wpt>
 <wpt lat="39.735640000" lon="-77.931547000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>865</ele>
+  <vertical>935</vertical>
   <name>Whitetail</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>21</numruns>
+  <numlifts>9</numlifts>
+  <snow>40</snow>
+  <longestrun>.93</longestrun>
+  <url>http://www.skiwhitetail.com</url>
 </wpt>
 <wpt lat="41.061329000" lon="-74.181924000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>752</ele>
+  <vertical>-1</vertical>
   <name>Campgaw Mountain</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>8</numruns>
+  <numlifts>4</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.skicampgaw.com</url>
 </wpt>
 <wpt lat="41.187527000" lon="-74.481220000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>815</ele>
+  <vertical>620</vertical>
   <name>Hidden Valley</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>15</numruns>
+  <numlifts>5</numlifts>
+  <snow>-1</snow>
+  <longestrun>.75</longestrun>
+  <url>http://www.hiddenvalleynj.com</url>
 </wpt>
 <wpt lat="41.183856000" lon="-74.522815000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>1040</ele>
+  <vertical>590</vertical>
   <name>Mountain Creek</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>46</numruns>
+  <numlifts>11</numlifts>
+  <snow>65</snow>
+  <longestrun>1.16</longestrun>
+  <url>http://www.mountaincreek.com</url>
 </wpt>
 <wpt lat="44.082477000" lon="-71.230406000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>600</ele>
+  <vertical>1750</vertical>
   <name>Attitash</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>75</numruns>
+  <numlifts>11</numlifts>
+  <snow>155</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.attitash.com</url>
 </wpt>
 <wpt lat="44.861159000" lon="-71.324888000">
   <ele></ele>
@@ -2221,24 +2211,24 @@
   <url></url>
 </wpt>
 <wpt lat="45.283314000" lon="-111.401214000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>6800</ele>
+  <vertical>4350</vertical>
   <name>Big Sky</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>150</numruns>
+  <numlifts>22</numlifts>
+  <snow>400</snow>
+  <longestrun>6</longestrun>
+  <url>http://www.bigskyresort.com</url>
 </wpt>
 <wpt lat="45.293440000" lon="-111.428608000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>7000</ele>
+  <vertical>4166</vertical>
   <name>Moonlight Basin</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>76</numruns>
+  <numlifts>6</numlifts>
+  <snow>400</snow>
+  <longestrun>2.8</longestrun>
+  <url>http://www.moonlightbasin.com</url>
 </wpt>
 <wpt lat="47.987139000" lon="-114.333342000">
   <ele></ele>
