@@ -1911,84 +1911,74 @@
   <url>http://www.redriverskiarea.com</url>
 </wpt>
 <wpt lat="35.902759000" lon="-106.365698000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>9000</ele>
+  <vertical>1440</vertical>
   <name>Pajarito</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>40</numruns>
+  <numlifts>7</numlifts>
+  <snow>125</snow>
+  <longestrun>-1</longestrun>
+  <url>www.skipajarito.com</url>
 </wpt>
 <wpt lat="35.187382000" lon="-106.490596000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>8678</ele>
+  <vertical>1700</vertical>
   <name>Sandia Peak</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>39</numruns>
+  <numlifts>6</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>www.sandiapeak.com</url>
 </wpt>
 <wpt lat="35.790239000" lon="-105.789015000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>10500</ele>
+  <vertical>1553</vertical>
   <name>Ski Santa Fe</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>69</numruns>
+  <numlifts>7</numlifts>
+  <snow>225</snow>
+  <longestrun>-1</longestrun>
+  <url>www.skisantafe.com</url>
 </wpt>
 <wpt lat="36.237078000" lon="-105.601072000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>9255</ele>
+  <vertical>1055</vertical>
   <name>Sipapu</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>41</numruns>
+  <numlifts>4</numlifts>
+  <snow>190</snow>
+  <longestrun>-1</longestrun>
+  <url>www.sipapunm.com</url>
 </wpt>
 <wpt lat="33.392325000" lon="-105.786639000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>11500</ele>
+  <vertical>1900</vertical>
   <name>Ski Apache</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>55</numruns>
+  <numlifts>10</numlifts>
+  <snow>180</snow>
+  <longestrun>-1</longestrun>
+  <url>www.skiapache.com</url>
 </wpt>
 <wpt lat="36.951889000" lon="-105.438235000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>9500</ele>
+  <vertical>2150</vertical>
   <name>Ski Rio</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
-</wpt>
-<wpt lat="39.248999000" lon="-119.922265000">
-  <ele></ele>
-  <vertical></vertical>
-  <name>Ski Rio</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>111</numruns>
+  <numlifts>10</numlifts>
+  <snow>260</snow>
+  <longestrun>-1</longestrun>
+  <url>-1</url>
 </wpt>
 <wpt lat="38.955551000" lon="-119.936337000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>10067</ele>
+  <vertical>3527</vertical>
   <name>Heavenly</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>94</numruns>
+  <numlifts>29</numlifts>
+  <snow>360</snow>
+  <longestrun>5.5</longestrun>
+  <url>www.skiheavenly.com</url>
 </wpt>
 <wpt lat="39.306864000" lon="-119.907835000">
   <ele></ele>

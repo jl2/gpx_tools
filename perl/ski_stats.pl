@@ -26,6 +26,8 @@ use Math::Trig qw(great_circle_distance deg2rad);
 #open ERROR, '>', "/dev/null";
 #STDERR->fdopen( \*ERROR, 'w');
 
+# Will probably start getting current conditions from http://www.wunderground.com/ski/
+
 # Constants
 # =========================================
 my $miles_per_km = 0.621371192;
