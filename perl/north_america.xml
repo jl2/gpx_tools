@@ -996,9 +996,9 @@
   <name>Cannon Mt.</name>
   <numruns>72</numruns>
   <numlifts>9</numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <snow>150</snow>
+  <longestrun>2.3</longestrun>
+  <url>www.cannonmt.com</url>
 </wpt>
 <wpt lat="44.055665000" lon="-71.111371000">
   <ele>527</ele>
@@ -1006,9 +1006,9 @@
   <name>Cranmore</name>
   <numruns>51</numruns>
   <numlifts>9</numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <snow>-1</snow>
+  <longestrun>1</longestrun>
+  <url>www.cranmore.com/winter</url>
 </wpt>
 <wpt lat="43.007192000" lon="-71.875231000">
   <ele>1050</ele>
@@ -1016,9 +1016,9 @@
   <name>Crotched Mountain</name>
   <numruns>23</numruns>
   <numlifts>5</numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>www.crotchedmountain.com</url>
 </wpt>
 <wpt lat="43.797078000" lon="-72.118781000">
   <ele>968</ele>
@@ -1026,9 +1026,9 @@
   <name>Dartmouth Skiway</name>
   <numruns>30</numruns>
   <numlifts>3</numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <snow>-1</snow>
+  <longestrun>1.25</longestrun>
+  <url>www.dartmouth.edu/~skiway</url>
 </wpt>
 <wpt lat="43.540265000" lon="-71.365301000">
   <ele>900</ele>
