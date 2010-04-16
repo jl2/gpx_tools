@@ -961,101 +961,101 @@
   <url>http://www.attitash.com</url>
 </wpt>
 <wpt lat="44.861159000" lon="-71.324888000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>1754</ele>
+  <vertical>1006</vertical>
   <name>Balsams Wilderness</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>16</numruns>
+  <numlifts>4</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>thebalsams.com</url>
 </wpt>
 <wpt lat="44.195520000" lon="-71.173921000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>1300</ele>
+  <vertical>1100</vertical>
   <name>Black Mountain</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>45</numruns>
+  <numlifts>4</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>www.blackmt.com</url>
 </wpt>
 <wpt lat="44.263025000" lon="-71.458305000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>1600</ele>
+  <vertical>1500</vertical>
   <name>Bretton Woods</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>101</numruns>
+  <numlifts>10</numlifts>
+  <snow>200</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.brettonwoods.com/winter_sports/alpine/overview</url>
 </wpt>
 <wpt lat="44.177970000" lon="-71.697827000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>200</ele>
+  <vertical>2186</vertical>
   <name>Cannon Mt.</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
+  <numruns>72</numruns>
+  <numlifts>9</numlifts>
   <snow></snow>
   <longestrun></longestrun>
   <url></url>
 </wpt>
 <wpt lat="44.055665000" lon="-71.111371000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>527</ele>
+  <vertical>1173</vertical>
   <name>Cranmore</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
+  <numruns>51</numruns>
+  <numlifts>9</numlifts>
   <snow></snow>
   <longestrun></longestrun>
   <url></url>
 </wpt>
 <wpt lat="43.007192000" lon="-71.875231000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>1050</ele>
+  <vertical>1016</vertical>
   <name>Crotched Mountain</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
+  <numruns>23</numruns>
+  <numlifts>5</numlifts>
   <snow></snow>
   <longestrun></longestrun>
   <url></url>
 </wpt>
 <wpt lat="43.797078000" lon="-72.118781000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>968</ele>
+  <vertical>975</vertical>
   <name>Dartmouth Skiway</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
+  <numruns>30</numruns>
+  <numlifts>3</numlifts>
   <snow></snow>
   <longestrun></longestrun>
   <url></url>
 </wpt>
 <wpt lat="43.540265000" lon="-71.365301000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>900</ele>
+  <vertical>1400</vertical>
   <name>Gunstock</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
+  <numruns>55</numruns>
+  <numlifts>8</numlifts>
   <snow></snow>
   <longestrun></longestrun>
   <url></url>
 </wpt>
 <wpt lat="43.845353000" lon="-71.084298000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>500</ele>
+  <vertical>350</vertical>
   <name>King Pine Ski Area (loc approx)</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
+  <numruns>17</numruns>
+  <numlifts>5</numlifts>
   <snow></snow>
   <longestrun></longestrun>
   <url></url>
 </wpt>
 <wpt lat="44.058868000" lon="-71.622573000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>950</ele>
+  <vertical>2100</vertical>
   <name>Loon Mountain</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
+  <numruns>55</numruns>
+  <numlifts>12</numlifts>
   <snow></snow>
   <longestrun></longestrun>
   <url></url>
@@ -1064,48 +1064,48 @@
   <ele></ele>
   <vertical></vertical>
   <name>McIntyre Ski Area</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
+  <numruns>9</numruns>
+  <numlifts>4</numlifts>
   <snow></snow>
   <longestrun></longestrun>
   <url></url>
 </wpt>
 <wpt lat="43.332163000" lon="-72.078505000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>1230</ele>
+  <vertical>1513</vertical>
   <name>Mt. Sunapee</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
+  <numruns>65</numruns>
+  <numlifts>10</numlifts>
   <snow></snow>
   <longestrun></longestrun>
   <url></url>
 </wpt>
 <wpt lat="43.163991000" lon="-71.783997000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>690</ele>
+  <vertical>710</vertical>
   <name>Pats Peak</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
+  <numruns>22</numruns>
+  <numlifts>10</numlifts>
   <snow></snow>
   <longestrun></longestrun>
   <url></url>
 </wpt>
 <wpt lat="43.565409000" lon="-71.779008000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>1000</ele>
+  <vertical>1250</vertical>
   <name>Ragged Mountain</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
+  <numruns>45</numruns>
+  <numlifts>5</numlifts>
   <snow></snow>
   <longestrun></longestrun>
   <url></url>
 </wpt>
 <wpt lat="43.744985000" lon="-71.756870000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>479</ele>
+  <vertical>1670</vertical>
   <name>Tenney Mountain</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
+  <numruns>48</numruns>
+  <numlifts>4</numlifts>
   <snow></snow>
   <longestrun></longestrun>
   <url></url>
@@ -1121,21 +1121,21 @@
   <url></url>
 </wpt>
 <wpt lat="43.950174000" lon="-71.515226000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>1984</ele>
+  <vertical>2020</vertical>
   <name>Waterville Valley</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
+  <numruns>52</numruns>
+  <numlifts>12</numlifts>
   <snow></snow>
   <longestrun></longestrun>
   <url></url>
 </wpt>
 <wpt lat="44.263998000" lon="-71.238805000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>2000</ele>
+  <vertical>2100</vertical>
   <name>Wildcat</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
+  <numruns>47</numruns>
+  <numlifts>4</numlifts>
   <snow></snow>
   <longestrun></longestrun>
   <url></url>
@@ -1981,144 +1981,144 @@
   <url>www.skiheavenly.com</url>
 </wpt>
 <wpt lat="39.306864000" lon="-119.907835000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>7900</ele>
+  <vertical>1800</vertical>
   <name>Mt. Rose Ski Tahoe</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>60</numruns>
+  <numlifts>7</numlifts>
+  <snow>400</snow>
+  <longestrun>2.5</longestrun>
+  <url>www.skirose.com</url>
 </wpt>
 <wpt lat="39.337501000" lon="-119.872347000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Sky Tavern</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>21</numruns>
+  <numlifts>4</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>www.skytavern.com</url>
 </wpt>
 <wpt lat="35.326901000" lon="-111.706402000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>9200</ele>
+  <vertical>2300</vertical>
   <name>Arizona Snowbowl</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>32</numruns>
+  <numlifts>4</numlifts>
+  <snow>260</snow>
+  <longestrun>2</longestrun>
+  <url>www.arizonasnowbowl.com</url>
 </wpt>
 <wpt lat="33.957873000" lon="-109.511877000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>9200</ele>
+  <vertical>2300</vertical>
   <name>Sunrise Park</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>65</numruns>
+  <numlifts>10</numlifts>
+  <snow>250</snow>
+  <longestrun>1.2</longestrun>
+  <url>www.sunriseskipark.com</url>
 </wpt>
 <wpt lat="35.236680000" lon="-112.183058000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>7500</ele>
+  <vertical>650</vertical>
   <name>Williams Ski Area</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>7</numruns>
+  <numlifts>2</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>www.elkridgeski.com</url>
 </wpt>
 <wpt lat="43.776316000" lon="-116.101598000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>5800</ele>
+  <vertical>1782</vertical>
   <name>Bogus Basin</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>52</numruns>
+  <numlifts>8</numlifts>
+  <snow>225</snow>
+  <longestrun>1.5</longestrun>
+  <url>www.bogusbasin.org</url>
 </wpt>
 <wpt lat="44.662259000" lon="-116.113657000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>4900</ele>
+  <vertical>2800</vertical>
   <name>Tamarack</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>42</numruns>
+  <numlifts>7</numlifts>
+  <snow>300</snow>
+  <longestrun>-1</longestrun>
+  <url>www.tamarackidaho.com</url>
 </wpt>
 <wpt lat="42.777474000" lon="-112.161835000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>6360</ele>
+  <vertical>3171</vertical>
   <name>Pebble Creek</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>54</numruns>
+  <numlifts>3</numlifts>
+  <snow>250</snow>
+  <longestrun>1.1</longestrun>
+  <url>www.pebblecreekskiarea.com</url>
 </wpt>
 <wpt lat="44.998115000" lon="-116.151772000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>5840</ele>
+  <vertical>1800</vertical>
   <name>Brundage Mountain</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>46</numruns>
+  <numlifts>5</numlifts>
+  <snow>320</snow>
+  <longestrun>2</longestrun>
+  <url>www.brundage.com</url>
 </wpt>
 <wpt lat="47.458297000" lon="-115.699506000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>4500</ele>
+  <vertical>850</vertical>
   <name>Lookout Pass</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>34</numruns>
+  <numlifts>4</numlifts>
+  <snow>400</snow>
+  <longestrun>1.5</longestrun>
+  <url>www.skilookout.com</url>
 </wpt>
 <wpt lat="42.371922000" lon="-113.546663000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>7760</ele>
+  <vertical>1000</vertical>
   <name>Pomerelle</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>24</numruns>
+  <numlifts>3</numlifts>
+  <snow>500</snow>
+  <longestrun>1.5</longestrun>
+  <url>www.pomerelle-mtn.com</url>
 </wpt>
 <wpt lat="48.328366000" lon="-116.651408000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>3960</ele>
+  <vertical>2400</vertical>
   <name>Schweitzer</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>92</numruns>
+  <numlifts>9</numlifts>
+  <snow>300</snow>
+  <longestrun>1.7</longestrun>
+  <url>www.schweitzer.com/winter</url>
 </wpt>
 <wpt lat="47.532912000" lon="-116.126736000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>4100</ele>
+  <vertical>2197</vertical>
   <name>Silver Mt.</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>73</numruns>
+  <numlifts>7</numlifts>
+  <snow>300</snow>
+  <longestrun>2.5</longestrun>
+  <url>www.silvermt.com</url>
 </wpt>
 <wpt lat="43.711501000" lon="-114.333967000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>3400</vertical>
   <name>Sun Valley</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>90</numruns>
+  <numlifts>14</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>www.sunvalley.com</url>
 </wpt>
 <wpt lat="44.712244000" lon="-107.502186000">
   <ele></ele>
