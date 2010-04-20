@@ -1136,249 +1136,239 @@
   <name>Wildcat</name>
   <numruns>47</numruns>
   <numlifts>4</numlifts>
-  <snow></snow>
+  <snow>-1</snow>
   <longestrun>2.75</longestrun>
   <url>www.skiwildcat.com</url>
 </wpt>
 <wpt lat="45.500912000" lon="-69.674899000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>1300</ele>
+  <vertical>1620</vertical>
   <name>Big Squaw Mountain</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>33</numruns>
+  <numlifts>2</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>www.bigsquawmountain.com</url>
 </wpt>
 <wpt lat="46.520591000" lon="-67.830255000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>650</ele>
+  <vertical>960</vertical>
   <name>Big Rock</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>27</numruns>
+  <numlifts>5</numlifts>
+  <snow>85</snow>
+  <longestrun>-1</longestrun>
+  <url>www.bigrockmaine.com</url>
 </wpt>
 <wpt lat="44.217497000" lon="-69.129502000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>150</ele>
+  <vertical>950</vertical>
   <name>Camden Snow Bowl</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>12</numruns>
+  <numlifts>4</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>www.camdensnowbowl.com</url>
 </wpt>
 <wpt lat="44.771811000" lon="-69.719490000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>120</ele>
+  <vertical>580</vertical>
   <name>Eaton Mountain (loc approx)</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>18</numruns>
+  <numlifts>2</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.eatonmountain.com/home.html</url>
 </wpt>
 <wpt lat="44.136138000" lon="-70.281739000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>25</ele>
+  <vertical>470</vertical>
   <name>Lost Valley Ski Area</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>18</numruns>
+  <numlifts>3</numlifts>
+  <snow>99</snow>
+  <longestrun>0.47</longestrun>
+  <url>http://www.lostvalleyski.com/index.html</url>
 </wpt>
 <wpt lat="44.399226000" lon="-70.706097000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>970</ele>
+  <vertical>1030</vertical>
   <name>Mt. Abram</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>44</numruns>
+  <numlifts>5</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>www.mtabram.com</url>
 </wpt>
 <wpt lat="46.733644000" lon="-67.902200000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>215</vertical>
   <name>Quoggy Jo Alpine Center (approx)</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>5</numruns>
+  <numlifts>1</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.skimaine.com/areas/quoggyjo</url>
 </wpt>
 <wpt lat="44.940345000" lon="-70.523790000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>2120</ele>
+  <vertical>2000</vertical>
   <name>Saddleback</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>66</numruns>
+  <numlifts>5</numlifts>
+  <snow>200</snow>
+  <longestrun>1.86</longestrun>
+  <url>www.saddlebackmaine.com/winter</url>
 </wpt>
 <wpt lat="44.045563000" lon="-70.809542000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>600</ele>
+  <vertical>1300</vertical>
   <name>Shawnee Peak</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>40</numruns>
+  <numlifts>5</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>www.shawneepeak.com</url>
 </wpt>
 <wpt lat="45.053633000" lon="-70.310505000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>1417</ele>
+  <vertical>2820</vertical>
   <name>Sugarloaf</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>138</numruns>
+  <numlifts>15</numlifts>
+  <snow>200</snow>
+  <longestrun>3.5</longestrun>
+  <url>www.sugarloaf.com</url>
 </wpt>
 <wpt lat="44.470302000" lon="-70.859504000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>780</ele>
+  <vertical>2360</vertical>
   <name>Sunday River</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>132</numruns>
+  <numlifts>18</numlifts>
+  <snow>155</snow>
+  <longestrun>3</longestrun>
+  <url>www.sundayriver.com</url>
 </wpt>
 <wpt lat="44.649901000" lon="-70.170749000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>400</ele>
+  <vertical>350</vertical>
   <name>Titcomb Mountain</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
-</wpt>
-<wpt lat="43.532492000" lon="-72.754550000">
-  <ele></ele>
-  <vertical></vertical>
-  <name>Bear Creek Club</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>16</numruns>
+  <numlifts>3</numlifts>
+  <snow>85</snow>
+  <longestrun>.41</longestrun>
+  <url>www.titcombmountain.com</url>
 </wpt>
 <wpt lat="38.792540000" lon="-78.790416000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>1250</ele>
+  <vertical>500</vertical>
   <name>Bryce Resort</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>8</numruns>
+  <numlifts>5</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>www.bryceresort.com</url>
 </wpt>
 <wpt lat="38.405619000" lon="-78.746307000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>1750</ele>
+  <vertical>1110</vertical>
   <name>Massanutten</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>14</numruns>
+  <numlifts>8</numlifts>
+  <snow>-1</snow>
+  <longestrun>.77</longestrun>
+  <url>www.massresort.com</url>
 </wpt>
 <wpt lat="37.967410000" lon="-79.884081000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>2500</ele>
+  <vertical>700</vertical>
   <name>The Homestead</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>10</numruns>
+  <numlifts>5</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>www.thehomestead.com</url>
 </wpt>
 <wpt lat="37.897284000" lon="-78.976594000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>2997</ele>
+  <vertical>1003</vertical>
   <name>Wintergreen Resort</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>25</numruns>
+  <numlifts>5</numlifts>
+  <snow>-1</snow>
+  <longestrun>1.4</longestrun>
+  <url>www.wintergreenresort.com</url>
 </wpt>
 <wpt lat="39.010674000" lon="-79.445566000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>3430</ele>
+  <vertical>850</vertical>
   <name>Canaan Valley</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>39</numruns>
+  <numlifts>3</numlifts>
+  <snow>150</snow>
+  <longestrun>1.1</longestrun>
+  <url>http://www.canaanresort.com</url>
 </wpt>
 <wpt lat="38.416315000" lon="-79.996419000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>3348</ele>
+  <vertical>1500</vertical>
   <name>Snowshoe</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
+  <numruns>60</numruns>
+  <numlifts>14</numlifts>
+  <snow>180</snow>
+  <longestrun>1.5</longestrun>
   <url></url>
 </wpt>
 <wpt lat="39.055962000" lon="-79.374278000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>3268</ele>
+  <vertical>1000</vertical>
   <name>Timberline</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>37</numruns>
+  <numlifts>4</numlifts>
+  <snow>150</snow>
+  <longestrun>2</longestrun>
+  <url>http://www.timberlineresort.com/index.php</url>
 </wpt>
 <wpt lat="37.774081000" lon="-81.117482000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>2997</ele>
+  <vertical>603</vertical>
   <name>Winterplace</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>28</numruns>
+  <numlifts>9</numlifts>
+  <snow>100</snow>
+  <longestrun>1.25</longestrun>
+  <url>www.winterplace.com</url>
 </wpt>
 <wpt lat="39.034895000" lon="-79.399277000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>3240</ele>
+  <vertical>1196</vertical>
   <name>Whitegrass Ski Touring Ctr</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>45</numruns>
+  <numlifts>-1</numlifts>
+  <snow>160</snow>
+  <longestrun>4</longestrun>
+  <url>www.whitegrass.com</url>
 </wpt>
 <wpt lat="39.548007000" lon="-79.358732000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Wisp</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>32</numruns>
+  <numlifts>10</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>www.wispresort.com</url>
 </wpt>
 <wpt lat="36.151427000" lon="-81.671855000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>3635</ele>
+  <vertical>365</vertical>
   <name>Appalachian Ski Mtn.</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>11</numruns>
+  <numlifts>5</numlifts>
+  <snow>60</snow>
+  <longestrun>.5</longestrun>
+  <url>www.appskimtn.com</url>
 </wpt>
 <wpt lat="36.129734000" lon="-81.870263000">
   <ele></ele>
