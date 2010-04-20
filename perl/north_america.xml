@@ -1036,9 +1036,9 @@
   <name>Gunstock</name>
   <numruns>55</numruns>
   <numlifts>8</numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>www.gunstock.com</url>
 </wpt>
 <wpt lat="43.845353000" lon="-71.084298000">
   <ele>500</ele>
@@ -1046,9 +1046,9 @@
   <name>King Pine Ski Area (loc approx)</name>
   <numruns>17</numruns>
   <numlifts>5</numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>www.kingpine.com</url>
 </wpt>
 <wpt lat="44.058868000" lon="-71.622573000">
   <ele>950</ele>
@@ -1056,9 +1056,9 @@
   <name>Loon Mountain</name>
   <numruns>55</numruns>
   <numlifts>12</numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <snow>150</snow>
+  <longestrun>2.5</longestrun>
+  <url>www.loonmtn.com</url>
 </wpt>
 <wpt lat="43.006945000" lon="-71.443251000">
   <ele></ele>
@@ -1066,9 +1066,9 @@
   <name>McIntyre Ski Area</name>
   <numruns>9</numruns>
   <numlifts>4</numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>www.mcintyreskiarea.com</url>
 </wpt>
 <wpt lat="43.332163000" lon="-72.078505000">
   <ele>1230</ele>
@@ -1076,9 +1076,9 @@
   <name>Mt. Sunapee</name>
   <numruns>65</numruns>
   <numlifts>10</numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>www.mountsunapee.com</url>
 </wpt>
 <wpt lat="43.163991000" lon="-71.783997000">
   <ele>690</ele>
@@ -1086,9 +1086,9 @@
   <name>Pats Peak</name>
   <numruns>22</numruns>
   <numlifts>10</numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <snow>-1</snow>
+  <longestrun>1.5</longestrun>
+  <url>www.patspeak.com</url>
 </wpt>
 <wpt lat="43.565409000" lon="-71.779008000">
   <ele>1000</ele>
@@ -1096,9 +1096,9 @@
   <name>Ragged Mountain</name>
   <numruns>45</numruns>
   <numlifts>5</numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>www.raggedmountainresort.com</url>
 </wpt>
 <wpt lat="43.744985000" lon="-71.756870000">
   <ele>479</ele>
@@ -1106,19 +1106,19 @@
   <name>Tenney Mountain</name>
   <numruns>48</numruns>
   <numlifts>4</numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>www.tenneymtn.com</url>
 </wpt>
 <wpt lat="43.437559000" lon="-71.703284000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Veterans Memorial Ski Area</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>-1</numruns>
+  <numlifts>-1</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>www.franklinskiarea.com</url>
 </wpt>
 <wpt lat="43.950174000" lon="-71.515226000">
   <ele>1984</ele>
@@ -1126,9 +1126,9 @@
   <name>Waterville Valley</name>
   <numruns>52</numruns>
   <numlifts>12</numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <snow>-1</snow>
+  <longestrun>3</longestrun>
+  <url>www.waterville.com</url>
 </wpt>
 <wpt lat="44.263998000" lon="-71.238805000">
   <ele>2000</ele>
@@ -1137,8 +1137,8 @@
   <numruns>47</numruns>
   <numlifts>4</numlifts>
   <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <longestrun>2.75</longestrun>
+  <url>www.skiwildcat.com</url>
 </wpt>
 <wpt lat="45.500912000" lon="-69.674899000">
   <ele></ele>
