@@ -1371,191 +1371,191 @@
   <url>www.appskimtn.com</url>
 </wpt>
 <wpt lat="36.129734000" lon="-81.870263000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>4100</ele>
+  <vertical>1200</vertical>
   <name>Sugar Mt.</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>20</numruns>
+  <numlifts>7</numlifts>
+  <snow>70</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.skisugar.com</url>
 </wpt>
 <wpt lat="36.184974000" lon="-81.878474000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>4675</ele>
+  <vertical>831</vertical>
   <name>Beech Mt.</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>15</numruns>
+  <numlifts>10</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.skibeech.com</url>
 </wpt>
 <wpt lat="36.150514000" lon="-81.791994000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>4200</ele>
+  <vertical>619</vertical>
   <name>Hawksnest</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>-1</numruns>
+  <numlifts>-1</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.hawksnest-resort.com</url>
 </wpt>
 <wpt lat="35.511969000" lon="-83.073022000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>4660</ele>
+  <vertical>740</vertical>
   <name>Cataloochee</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>16</numruns>
+  <numlifts>6</numlifts>
+  <snow>-1</snow>
+  <longestrun>.36</longestrun>
+  <url>http://www.cataloochee.com</url>
 </wpt>
 <wpt lat="35.115123000" lon="-82.993805000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Sapphire Valley</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>3</numruns>
+  <numlifts>2</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.skisapphire.com</url>
 </wpt>
 <wpt lat="35.010495000" lon="-83.317680000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Scaly Mountain</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>-1</numruns>
+  <numlifts>-1</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.scalymountain.com</url>
 </wpt>
 <wpt lat="35.955929000" lon="-82.510640000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>3950</ele>
+  <vertical>650</vertical>
   <name>Wolf Laurel</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>20</numruns>
+  <numlifts>5</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.skiwolfridgenc.com</url>
 </wpt>
 <wpt lat="34.991901000" lon="-83.344289000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>-1</ele>
+  <vertical>-1</vertical>
   <name>Sky Valley</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>-1</numruns>
+  <numlifts>-1</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.skyvalley.com</url>
 </wpt>
 <wpt lat="34.563348000" lon="-85.596781000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>1650</ele>
+  <vertical>150</vertical>
   <name>Cloudmont</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>2</numruns>
+  <numlifts>2</numlifts>
+  <snow>-1</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.cloudmont.com</url>
 </wpt>
 <wpt lat="35.707036000" lon="-83.521653000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>2700</ele>
+  <vertical>600</vertical>
   <name>Ober Gatlinburg</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>8</numruns>
+  <numlifts>3</numlifts>
+  <snow>49</snow>
+  <longestrun>.95</longestrun>
+  <url>http://www.obergatlinburg.com</url>
 </wpt>
 <wpt lat="40.588749000" lon="-111.633826000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>8530</ele>
+  <vertical>2020</vertical>
   <name>Alta</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>114</numruns>
+  <numlifts>11</numlifts>
+  <snow>514</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.alta.com</url>
 </wpt>
 <wpt lat="40.581770000" lon="-111.654655000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>7760</ele>
+  <vertical>3240</vertical>
   <name>Snowbird</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>85</numruns>
+  <numlifts>12</numlifts>
+  <snow>500</snow>
+  <longestrun>2.5</longestrun>
+  <url>http://www.snowbird.com</url>
 </wpt>
 <wpt lat="40.599579000" lon="-111.581368000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>8755</ele>
+  <vertical>1745</vertical>
   <name>Brighton</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>66</numruns>
+  <numlifts>7</numlifts>
+  <snow>500</snow>
+  <longestrun>5.5</longestrun>
+  <url>http://www.brightonresort.com</url>
 </wpt>
 <wpt lat="40.626558000" lon="-111.599291000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>7988</ele>
+  <vertical>2047</vertical>
   <name>Solitude</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>65</numruns>
+  <numlifts>8</numlifts>
+  <snow>500</snow>
+  <longestrun>3.5</longestrun>
+  <url>http://www.skisolitude.com</url>
 </wpt>
 <wpt lat="40.653624000" lon="-111.510527000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>6900</ele>
+  <vertical>3100</vertical>
   <name>Park City</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>110</numruns>
+  <numlifts>16</numlifts>
+  <snow>360</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.parkcitymountain.com</url>
 </wpt>
 <wpt lat="40.637776000" lon="-111.478383000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>6570</ele>
+  <vertical>3000</vertical>
   <name>Deer Valley</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>100</numruns>
+  <numlifts>21</numlifts>
+  <snow>-1</snow>
+  <longestrun>2.8</longestrun>
+  <url>http://www.deervalley.com</url>
 </wpt>
 <wpt lat="40.686642000" lon="-111.556560000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>6800</ele>
+  <vertical>3190</vertical>
   <name>The Canyons</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>167</numruns>
+  <numlifts>18</numlifts>
+  <snow>355</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.thecanyons.com</url>
 </wpt>
 <wpt lat="41.211542000" lon="-111.852708000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>6450</ele>
+  <vertical>2900</vertical>
   <name>Snowbasin</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
-  <snow></snow>
-  <longestrun></longestrun>
-  <url></url>
+  <numruns>113</numruns>
+  <numlifts>10</numlifts>
+  <snow>400</snow>
+  <longestrun>-1</longestrun>
+  <url>http://www.snowbasin.com</url>
 </wpt>
 <wpt lat="41.380198000" lon="-111.781448000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>7600</ele>
+  <vertical>1300</vertical>
   <name>Powder Mountain</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
+  <numruns>124</numruns>
+  <numlifts>7</numlifts>
   <snow></snow>
   <longestrun></longestrun>
   <url></url>
@@ -1591,21 +1591,21 @@
   <url></url>
 </wpt>
 <wpt lat="40.392459000" lon="-111.579100000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>6100</ele>
+  <vertical>2150</vertical>
   <name>Sundance</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
+  <numruns>42</numruns>
+  <numlifts>4</numlifts>
   <snow></snow>
   <longestrun></longestrun>
   <url></url>
 </wpt>
 <wpt lat="41.967956000" lon="-111.540492000">
-  <ele></ele>
-  <vertical></vertical>
+  <ele>7200</ele>
+  <vertical>1600</vertical>
   <name>Beaver Mountain</name>
-  <numruns></numruns>
-  <numlifts></numlifts>
+  <numruns>48</numruns>
+  <numlifts>6</numlifts>
   <snow></snow>
   <longestrun></longestrun>
   <url></url>
